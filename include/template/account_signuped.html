@@ -1,0 +1,38 @@
+<!--{include header}-->
+
+<div id="bdw" class="bdw">
+<div id="bd" class="cf">
+<div id="signuped">
+    <div id="content">
+        <div class="box">
+            <div class="box-top"></div>
+            <div class="box-content">
+                <div class="head success"><h2>Congratulations,register succesfully.</h2></div>
+                <div class="sect">
+                    <h3 class="notice-title">Next,please verify your Email</h3>
+                    <div class="notice-content">
+                        <p>We send Verification Email to <strong>{$email}</strong>,please goto your email box and verify it.</p>
+					<!--{if $wwwlink}-->
+                        <p class="signup-gotoverify"><a href="{$wwwlink}" target="_blank"><img src="/static/img/signup-email-link.gif"></a></p>                    
+					<!--{/if}-->
+						</div>
+
+                    <div class="help-tip">
+                        <h3 class="help-title">Cannot receive Email?</h3>
+                        <ul class="help-list">
+                            <li>Maybe it was thrown to spam Email了,please go to spam Email folder to find it.</li>
+							<li><a href="/account/verify.php?email=${urlEncode($email)}">Click here </a>resend email to your email box</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box-bottom"></div>
+        </div>
+    </div>
+    <div id="sidebar">
+    </div>
+</div>
+</div> <!-- bd end -->
+</div> <!-- bdw end -->
+
+<!--{include footer}-->

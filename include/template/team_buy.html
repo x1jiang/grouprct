@@ -1,0 +1,89 @@
+<!--{include header}-->
+<div id="bdw" class="bdw">
+<div id="bd" class="cf">
+<div id="content">
+    <form action="/team/buy.php?id={$team['id']}" method="post" class="validator">
+	<input id="deal-per-number" value="{$team['per_number']}" type="hidden" />
+    <div id="deal-buy" class="box">
+        <div class="box-top"></div>
+        <div class="box-content">
+            <div class="head"><h2>Submit order</h2></div>
+            <div class="sect">
+            <table class="order-table">
+                <tr>
+                    <th class="deal-buy-desc">Item</th>
+                    <th class="deal-buy-quantity">Quantity</th>
+                    <th class="deal-buy-multi"></th>
+                    <th class="deal-buy-price">Price</th>
+                    <th class="deal-buy-equal"></th>
+                    <th class="deal-buy-total">Total money</th>
+                </tr>
+                <tr>
+                    <td class="deal-buy-desc">{$team['title']}</td>
+                    <td class="deal-buy-quantity"><input type="text" class="input-text f-input" maxlength="4" name="quantity" value="{$order['quantity']}" id="deal-buy-quantity-input" ${$team['per_number']==1?'readonly':''} /><br /><span style="font-size:12px;color:gray;"><!--{if $team['per_number']==0}-->At most 9999<!--{else}-->At most {$team['per_number']}<!--{/if}--></span></td>
+                    <td class="deal-buy-multi">x</td>
+                    <td class="deal-buy-price"><span class="money">{$currency}</span><span id="deal-buy-price">{$team['team_price']}</span></td>
+                    <td class="deal-buy-equal">=</td>
+                    <td class="deal-buy-total"><span class="money">{$currency}</span><span id="deal-buy-total">{$order['quantity']*$team['team_price']}</span></td>
+                </tr>
+				<!--{if $team['delivery']=='express'}-->
+                <tr>
+                    <td class="deal-buy-desc">Delivery</td>
+                    <td class="deal-buy-quantity"></td>
+                    <td class="deal-buy-multi"></td>
+                    <td class="deal-buy-price"><span class="money">{$currency}</span><span id="deal-express-price">{$team['fare']}</span></td>
+                    <td class="deal-buy-equal">=</td>
+                    <td class="deal-buy-total"><span class="money">{$currency}</span><span id="deal-express-total">{$team['fare']}</span></td>
+                </tr>
+				<!--{/if}-->
+
+				<tr class="order-total">
+                    <td class="deal-buy-desc"><strong>Order amount:</strong></td>
+                    <td class="deal-buy-quantity"></td>
+                    <td class="deal-buy-multi"></td>
+                    <td class="deal-buy-price"></td>
+                    <td class="deal-buy-equal">=</td>
+                    <td class="deal-buy-total"><span class="money">{$currency}</span><strong id="deal-buy-total-t">{$order['origin']}</strong></td>
+                </tr>
+            </table>
+			<!--{if $team['delivery']=='express'}-->
+			<div class="wholetip clear"><h3>Delivery info</h3></div>
+			<div class="field username">
+				<label>Real Name</label>
+				<input type="text" size="30" name="realname" id="settings-realname" class="f-input" value="{$login_user['realname']}" require="true" datatype="require" />
+			</div>
+			<div class="field mobile">
+				<label>Mobile number</label>
+				<input type="text" size="30" name="mobile" id="settings-mobile" class="f-input" value="{$login_user['mobile']}" require="true" datatype="mobile" maxLength="11" />
+				<span class="hint">Mobile number is the contact way</span>
+			</div>
+			<div class="field mobile">
+				<label>Zip code</label>
+				<input type="text" size="30" name="zipcode" id="settings-mobile" class="f-input" value="{$login_user['zipcode']}" require="true" datatype="zip" maxLength="6" />
+			</div>
+			<div class="field username">
+				<label>Address</label>
+				<input type="text" size="30" name="address" id="settings-address" class="f-input" value="{$login_user['address']}" require="true" datatype="require" />
+				<span class="hint">Please fill it completely</span>
+			</div>
+			<!--{/if}-->
+			<div class="field mobile">
+				<label>Remark</label>
+				<textarea name="remark" style="width:500px;height:80px;padding:2px;">${htmlspecialchars($order['remark'])}</textarea>
+			</div>
+            <input id="deal-buy-cardcode" type="hidden" name="cardcode" maxlength="8" value="" />
+            <input type="hidden" name="id" value="{$order['id']}" />
+			<div class="form-submit"><input type="submit" class="formbutton" name="buy" value="Make sure and buy"/></div>
+            </div>
+        </div>
+        <div class="box-bottom"></div>
+    </div>
+    </form>
+</div>
+<div id="sidebar">
+	<!--{include block_side_credit}-->
+</div>
+</div> <!-- bd end -->
+</div> <!-- bdw end -->
+
+<!--{include footer}-->

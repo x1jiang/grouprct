@@ -1,0 +1,29 @@
+<!--{include biz_html_header}-->
+<script type="text/javascript" src="/static/js/xheditor/xheditor.js"></script> 
+<div id="hdw">
+	<div id="hd">
+		<div id="logo"><a href="/index.php" class="link" target="_blank"><img src="/static/css/i/logo.gif" /></a></div>
+		<div class="guides">
+			<div class="city">
+				<h2>Merchant admin part</h2>
+			</div>
+		</div>
+		<ul class="nav cf">${current_biz()}</ul>
+		<!--{if is_partner()}-->
+		<div class="logins">
+			<ul id="account">
+				<li class="username">Welcome you,{$login_partner['title']}.</li>
+				<li class="logout"><a href="/biz/logout.php">Logout</a></li>
+			</ul>
+			<div class="line islogin"></div>
+		</div>
+		<!--{/if}-->
+	</div>
+</div>
+
+<!--{if $session_notice=Session::Get('notice',true)}-->
+<div class="sysmsgw" id="sysmsg-success"><div class="sysmsg"><p>{$session_notice}</p><span class="close">Close</span></div></div> 
+<!--{/if}-->
+<!--{if $session_notice=Session::Get('error',true)}-->
+<div class="sysmsgw" id="sysmsg-error"><div class="sysmsg"><p>{$session_notice}</p><span class="close">Close</span></div></div> 
+<!--{/if}-->
