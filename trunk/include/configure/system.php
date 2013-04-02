@@ -4,7 +4,7 @@ $INI = array (
   array (
     'host' => 'localhost',
     'user' => 'root',
-    'pass' => '551125xq',
+    'pass' => 'Loseme4ever!',
     'name' => 'ogo',
   ),
 );
