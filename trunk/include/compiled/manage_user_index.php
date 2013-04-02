@@ -35,11 +35,10 @@
                     </table>
 				</div>
             </div>
-            <div class="box-bottom"></div>
         </div>
     </div>
 </div>
 </div> <!-- bd end -->
 </div> <!-- bdw end -->
 
-<?php include template("manage_footer");?>
+
