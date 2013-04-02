@@ -27,12 +27,12 @@
                             <span class="hint">at least 4 letters</span>
                         </div>
                         <div class="field password">
-                            <label for="signup-password-confirm">re-type password</label>
+                            <label for="signup-password-confirm">re-type</label>
                             <input type="password" size="30" name="password2" id="signup-password-confirm" class="f-input" require="true" datatype="compare" compare="signup-password" />
                         </div>
                         <div class="field">
-                            <label for="signup-password-confirm">Mobile number</label>
-                            <input type="text" size="30" name="mobile" id="signup-mobile" class="number" /><span class="inputtip">Mobile number is important way to contact you,<?php echo $INI['system']['couponname']; ?>SMS notice</span>
+                            <label for="signup-password-confirm">Mobile</label>
+                            <input type="text" size="30" name="mobile" id="signup-mobile" class="number" /><span class="inputtip">Mobile number is important way to contact you</span>
                         </div>
 						<div class="field city">
                             <label id="enter-address-city-label" for="signup-city">City</label>
@@ -40,7 +40,7 @@
                         </div>
 						 <div class="field subscribe">
                             <input tabindex="3" type="checkbox" value="1" name="subscribe" id="subscribe" class="f-check" checked="checked" />
-                            <label for="subscribe">Subscribe to get Daily deal info</label>
+                            <label for="subscribe">Subscribe news</label>
                         </div>
                         <div class="act">
                             <input type="submit" value="Register" name="commit" id="signup-submit" class="formbutton"/>
@@ -57,7 +57,7 @@
             <div class="sbox-content">
                 <div class="side-tip">
                     <h2>Has<?php echo $INI['system']['abbreviation']; ?>account?</h2>
-                    <p>Goto<a href="/account/login.php">Login</a>.</p>
+                    <p> <a href="/account/login.php">Login</a>.</p>
                 </div>
             </div>
             <div class="sbox-bottom"></div>

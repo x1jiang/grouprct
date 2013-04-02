@@ -64,7 +64,7 @@ class ZSystem
 			$ini['system']['sitename'] = 'OGO';
 		}
 		if(!$ini['system']['sitetitle']) {
-			$ini['system']['sitetitle'] = 'Groupon clone|Group buy script|Group buy open source code';
+			$ini['system']['sitetitle'] = 'Randomized Clinical Trial of the day';
 		}
 		if(!$ini['system']['abbreviation']) {
 			$ini['system']['abbreviation'] = 'OGO';
