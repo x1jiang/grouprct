@@ -18,7 +18,7 @@
 								<div class="<?php echo $one['picclass']; ?>"></div>
 								<a href="/team.php?id=<?php echo $one['id']; ?>" title="<?php echo $one['title']; ?>" target="_blank"><img alt="<?php echo $one['title']; ?>" src="<?php echo team_image($one['image']); ?>" width="200" height="121"></a>
 							</div>
-							<div class="info"><p class="total"><strong class="count"><?php echo $one['now_number']; ?></strong>bought</p><p class="price">Retail Price:<strong class="old"><span class="money"><?php echo $currency; ?></span><?php echo moneyit($one['market_price']); ?></strong><br />Discoutn:<strong class="discount"><?php echo moneyit((10*$one['team_price']/$one['market_price'])); ?></strong><br />Our price:<strong><span class="money"><?php echo $currency; ?></span><?php echo moneyit($one['team_price']); ?></strong><br />Save:<strong><span class="money"><?php echo $currency; ?></span><?php echo moneyit($one['market_price']-$one['team_price']); ?></strong><br /></p></div>
+							<div class="info"><p class="total"><strong class="count"><?php echo $one['now_number']; ?></strong>bought</p><p class="price">Retail Price:<strong class="old"><span class="money"><?php echo $currency; ?></span><?php echo moneyit($one['market_price']); ?></strong><br />Discount:<strong class="discount"><?php echo moneyit((10*$one['team_price']/$one['market_price'])); ?></strong><br />Our price:<strong><span class="money"><?php echo $currency; ?></span><?php echo moneyit($one['team_price']); ?></strong><br />Save:<strong><span class="money"><?php echo $currency; ?></span><?php echo moneyit($one['market_price']-$one['team_price']); ?></strong><br /></p></div>
 						</li>
 					<?php }}?>
 					</ul>
