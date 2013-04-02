@@ -1,0 +1,91 @@
+<!--{include header}-->
+<!--{if is_get()}-->
+<div class="sysmsgw" id="sysmsg-error"><div class="sysmsg"><p>This Order has not finished payment,please repay</p><span class="close">Close</span></div></div>
+<!--{/if}-->
+
+<div id="bdw" class="bdw">
+<div id="bd" class="cf">
+<div id="order-pay">
+    <div id="content">
+        <div id="deal-buy" class="box">
+            <div class="box-top"></div>
+            <div class="box-content">
+                <div class="head">
+                    <h2>Total money :<strong class="total-money">${moneyit($total_money)}</strong> dollars</h2>
+                </div>
+                <div class="sect">
+                    <div style="text-align:left;">
+<!--{if $order['service']=='credit'}-->
+<form id="order-pay-credit-form" method="post" sid="{$order_id}">
+	<input type="hidden" name="order_id" value="{$order_id}" />
+	<input type="hidden" name="service" value="credit" />
+	<input type="submit" class="formbutton gotopay" value="to to pay user remaining charge" />
+</form>
+<!--{elseif $order['service']=='tenpay'}-->
+<form id="order-pay-form" method="post" sid="{$order_id}" target="_blank">
+	<input type="hidden" name="order_id" value="{$order_id}" />
+	<input type="hidden" name="reqUrl" value="{$reqUrl}" />
+	<input type="hidden" name="action" value="redirect" />
+	<input type="submit" class="formbutton" value="goto tenpay" />
+</form>
+<!--{elseif $order['service']=='alipay'}-->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+<!-- Identify your business so that you can collect the payments. --> 
+<input type="hidden" name="business" value="fenghaidongchina@gmail.com"> 
+<!-- Specify a Buy Now button. --> 
+<input type="hidden" name="cmd" value="_xclick"> 
+<!-- Specify details about the item that buyers will purchase. --> 
+<input type="hidden" name="item_name" value={$team['title']}>
+<input type="hidden" name="item_number" value="Grouponstyle">
+ 
+<input type="hidden" name="amount" value="{$total_money}"> 
+<input type="hidden" name="currency_code" value="USD"> 
+<input type="hidden" name="return"     value= "http://www.taodyp.com/index.php"  > 
+<input type="hidden" name="notify_url" value= "http://www.taodyp.com/myipn.php"  > 
+<!-- Display the payment button. --> 
+<input type="image" name="submit" border="0" 
+src="https://www.paypal.com/en_US/i/btn/btn_buynow_LG.gif" 
+alt="PayPal - The safer, easier way to pay online"> 
+<img alt="" border="0" width="1" height="1" 
+src="https://www.paypal.com/en_US/i/scr/pixel.gif" > 
+</form> 
+<!--{elseif $order['service']=='alipay'}-->
+<form id="order-pay-form" method="post" action="https://www.alipay.com/cooperate/gateway.do?_input_charset={$_input_charset}" target="_blank" sid="{$order['id']}">
+	<input type="hidden" name="body" value="{$body}" />
+	<input type="hidden" name="notify_url" value="{$notify_url}" />
+	<input type="hidden" name="out_trade_no" value="{$out_trade_no}" />
+	<input type="hidden" name="partner" value="{$partner}" />
+	<input type="hidden" name="payment_type" value="1" />
+	<input type="hidden" name="return_url" value="{$return_url}" />
+	<input type="hidden" name="seller_email" value="{$seller_email}" />
+	<input type="hidden" name="service" value="{$service}" />
+	<input type="hidden" name="show_url" value="{$show_url}" />
+	<input type="hidden" name="subject" value="{$subject}" />
+	<input type="hidden" name="total_fee" value="{$total_money}" />
+	<input type="hidden" name="sign_type" value="{$sign_type}" />
+	<input type="hidden" name="sign" value="{$sign}" />
+	<img src="/static/css/i/alipay.png" /><br /><input type="submit" class="formbutton gotopay" value="Goto Paypal to pay this product" />
+</form>
+<!--{elseif $order['service']=='chinabank'}-->
+<form id="order-pay-form" method="post" action="https://pay3.chinabank.com.cn/PayGate" target="_blank" sid="{$order['id']}">
+	<input type="hidden" name="v_mid" value="{$v_mid}" />
+	<input type="hidden" name="v_oid" value="{$v_oid}" />
+	<input type="hidden" name="v_amount" value="{$total_money}" />
+	<input type="hidden" name="v_moneytype" value="{$v_moneytype}" />
+	<input type="hidden" name="v_url" value="{$v_url}" />
+	<input type="hidden" name="v_md5info" value="{$v_md5info}" />
+	<img src="/static/css/i/chinabank.png" /><br/><input type="submit" class="formbutton gotopay" value="goto chinabank" style="vertical-align:middle;"/>
+</form>
+<!--{/if}-->
+						<div class="back-to-check"><a href="/order/check.php?id={$order_id}">&raquo; Return choose other ways to pay</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-bottom"></div>
+        </div>
+    </div>
+</div>
+</div> <!-- bd end -->
+</div> <!-- bdw end -->
+
+<!--{include footer}-->

@@ -1,0 +1,17 @@
+<div id="order-pay-dialog" class="order-pay-dialog-c" style="width:380px;">
+	<h3><span id="order-pay-dialog-close" class="close" onclick="return X.boxClose();">Close</span>User info and Store cash</h3>
+	<div style="overflow-x:hidden;padding:10px;">
+	<table width="96%" class="coupons-table">
+		<tr><td width="80"><b>Email:</b></td><td>{$user['email']}</td></tr>
+		<tr><td><b>Username:</b></td><td>{$user['username']}</td></tr>
+		<tr><td><b>real Name:</b></td><td>{$user['realname']}</td></tr>
+		<tr><td><b>Mobile number:</b></td><td>{$user['mobile']}</td></tr>
+		<tr><td><b>account Remaining :</b></td><td><b>${moneyit($user['money'])}</b> Dollars </td></tr>
+		<tr><td><b>Zip code :</b></td><td>{$user['zipcode']}</td></tr>
+		<tr><td><b>delivery address:</b></td><td>{$user['address']}</td></tr>
+		<tr><td><b>RegisterIP:</b></td><td>{$user['ip']}</td></tr>
+		<tr><td colspan="2"><hr /></td></tr>
+		<tr><td><b>account Store:</b></td><td><input type="text" name="in" id="user-dialog-input-id" value="0" size="6" maxLength="6" require="true" datatype="number" class="number" uid="{$user['id']}" ask="really give it toUser Store?" />&nbsp;&nbsp;<input type="submit" value="OK" onclick="return X.manage.usermoney();"/></td></tr>
+	</table>
+	</div>
+</div>

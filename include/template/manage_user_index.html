@@ -1,0 +1,45 @@
+<!--{include manage_header}-->
+
+<div id="bdw" class="bdw">
+<div id="bd" class="cf">
+<div id="coupons">
+	<div class="dashboard" id="dashboard">
+		<ul>${mcurrent_user('index')}</ul>
+	</div>
+    <div id="content" class="coupons-box clear mainwide">
+		<div class="box clear">
+            <div class="box-top"></div>
+            <div class="box-content">
+                <div class="head">
+                    <h2>User list</h2>
+                    <ul class="filter">
+						<li><form action="/manage/user/index.php" method="get">Username:<input type="text" name="uname" class="h-input" value="${htmlspecialchars($uname)}" >&nbsp;Email:<input type="text" name="like" class="h-input" value="${htmlspecialchars($like)}" >&nbsp;<select name="ucity" style="width:120px;">${Utility::Option(option_category('city'), $ucity, 'City')}</select>&nbsp;<input type="submit" value="Filter" class="formbutton"  style="padding:1px 6px;"/><form></li>
+					</ul>
+				</div>
+                <div class="sect">
+					<table id="orders-list" cellspacing="0" cellpadding="0" border="0" class="coupons-table">
+					<tr><th width="50">ID</th><th width="200">Email/Username</th><th width="100" nowrap>Name/City</th><th width="40">Remaining </th><th width="40">Zip code</th><th width="120">RegisterIP/Register time</th></th><th width="100">Phone number</th><th width="120">Operation</th></tr>
+					<!--{loop $users $index $one}-->
+					<tr ${$index%2?'':'class="alt"'} id="team-list-id-{$one['id']}">
+						<td>{$one['id']}</td>
+						<td>{$one['email']}<br/>{$one['username']}</td>
+						<td>${$one['realname']?$one['realname']:'----';}<br/><!--{if $one['city_id']}-->{$hotcities[$one['city_id']]['name']}<!--{else}-->Others <!--{/if}--></td>
+						<td><span class="currency">{$currency}</span>${moneyit($one['money'])}</td>
+						<td>{$one['zipcode']}</td>
+						<td>{$one['ip']}<br/>${date('Y-m-d H:i', $one['create_time'])}</td>
+						<td>{$one['mobile']}</td>
+						<td class="op"><a href="/ajax/manage.php?action=userview&id={$one['id']}" class="ajaxlink">Info</a>｜<a href="/manage/user/edit.php?id={$one['id']}">Edit </a></td>
+					</tr>
+					<!--{/loop}-->
+					<tr><td colspan="8">{$pagestring}</tr>
+                    </table>
+				</div>
+            </div>
+            <div class="box-bottom"></div>
+        </div>
+    </div>
+</div>
+</div> <!-- bd end -->
+</div> <!-- bdw end -->
+
+<!--{include manage_footer}-->

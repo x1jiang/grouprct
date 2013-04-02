@@ -1,0 +1,44 @@
+<div id="order-pay-dialog" class="order-pay-dialog-c" style="width:480px;">
+	<h3><span id="order-pay-dialog-close" class="close" onclick="return X.boxClose();">Close</span></h3>
+	<div style="overflow-x:hidden;padding:10px;" id="dialog-order-id" oid="{$order['id']}">
+	<table width="96%" align="center" class="coupons-table">
+		<tr><td width="80"><b>Username:</b></td><td>{$user['username']}</td></tr>
+		<tr><td><b>Email:</b></td><td>{$user['email']}</td></tr>
+		<tr><td><b>Daily deal item :</b></td><td>{$team['title']}</td></tr>
+		<tr><td><b>Quantity:</b></td><td>{$order['quantity']}</td></tr>
+		<tr><td><b>Pay Status:</b></td><td>{$paystate[$order['state']]}</td></tr>
+		<tr><td><b>Pay detail:</b></td><td><!--{if $order['credit']}-->Remaining pay <b>${moneyit($order['credit'])}</b> Dollars <!--{/if}-->&nbsp;<!--{if $order['service']!='credit'&&$order['money']}-->{$payservice[$order['service']]}pay <b>${moneyit($order['money'])}</b> Dollars <!--{/if}--><!--{if $order['card_id']}-->&nbsp;Coupon :<b>${moneyit($order['card'])}</b> Dollars <!--{/if}--></td></tr>
+		<tr><td><b>Order time:</b></td><td>${date('Y-m-d H:i', $order['create_time'])}</td></tr>
+
+	<!--{if $user['mobile']}-->
+		<tr><td><b>Mobile Number:</b></td><td>{$user['mobile']}</td></tr>
+	<!--{/if}-->
+	
+	<!--{if $user['qq']}-->
+		<tr><td><b>OICQ:</b></td><td>{$user['qq']}</td></tr>
+	<!--{/if}-->
+
+	<!--{if $user['msn']}-->
+		<tr><td><b>MSN:</b></td><td>{$user['msn']}</td></tr>
+	<!--{/if}-->
+	<!--{if $order['remark']}-->
+		<tr><td width="80"><b>buyer remark:</b></td><td>${htmlspecialchars($order['remark'])}</td></tr>
+	<!--{/if}-->
+
+	<!--{if $team['delivery']=='express'}-->
+		<tr><th colspan="2"><hr/></th></td>
+		<tr><td width="80"><b>Real name:</b></td><td>{$order['realname']}</td></tr>
+		<tr><td><b>Mobile number:</b></td><td>{$order['mobile']}</td></tr>
+		<tr><td><b>Address:</b></td><td>{$order['address']}</td></tr>
+		<tr><th colspan="2"><hr/></th></td>
+		<tr><td><b>Delivery info:</b></td><td><select name="express_id" id="order-dialog-select-id">${Utility::Option($option_express, $order['express_id'], 'Please choose delivery')}</select>&nbsp;<input type="text" name="in" id="order-dialog-input-id" value="{$order['express_no']}" style="width:150px;" maxLength="32" />&nbsp;&nbsp;<input type="submit" value="OK" onclick="return X.manage.orderexpress();"/></td></tr>
+	<!--{/if}-->
+
+	<!--{if $order['state']=='pay'}-->
+		<tr><th colspan="2"><hr/></th></td>
+		<tr><td><b>Refund handling:</b></td><td><select name="refund" id="order-dialog-refund-id">${Utility::Option($option_refund, '', 'Please choose refund way')}</select>&nbsp;<input type="submit" value="OK" onclick="return X.manage.orderrefund();"/></td></tr>
+	<!--{/if}-->
+
+	</table>
+	</div>
+</div>

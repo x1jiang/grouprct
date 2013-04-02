@@ -1,0 +1,26 @@
+<div id="order-pay-dialog" class="order-pay-dialog-c" style="width:480px;">
+	<h3><span id="order-pay-dialog-close" class="close" onclick="return X.boxClose();">Close</span>Daily deal item Info</h3>
+	<div style="overflow-x:hidden;padding:10px;">
+	<table width="96%" align="center" class="coupons-table">
+		<tr><td width="80"><b>item name:</b></td><td><b>{$team['title']}</b></td></tr>
+		<tr><td><b>Daily deal time:</b></td><td>begin:<b>${date('Y-m-d',$team['begin_time'])}</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ended at:<b>${date('Y-m-d',$team['end_time'])}</b></td></tr>
+
+		<tr><td><b>now Status:</b></td><td><span style="color:#F00;font-weight:bold;">${state_explain($team)}</span><!--{if $team['close_time']&&$team['now_number']>=$team['min_number']&&$team['delivery']!='express'}-->&nbsp;&nbsp;<span style="color:#F8C;font-weight:bold;"><!--{if ($team['teamcoupon'])}-->&lt;{$INI['system']['couponname']}unpush&gt;<!--{else}-->&lt;{$INI['system']['couponname']}push&gt;<!--{/if}--></span><!--{/if}--></td></tr>
+		<tr><td><b>limited Quantity:</b></td><td>Minimal :{$team['min_number']}&nbsp;&nbsp;&nbsp;&nbsp;Maximized :${$team['max_number']==0?'no limit':$team['max_number']}</td></tr>
+		<tr><td><b>our price:</b></td><td>retail price:<b>${moneyit($team['market_price'])}</b>&nbsp;Dollars &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Daily deal Price:<b>${moneyit($team['team_price'])}</b>&nbsp;Dollars </td></tr>
+		<tr><th colspan="2"><hr/></th></td>
+		<tr><td><b>Deal statistics:</b></td><td><b>{$team['now_number']}</b>&nbsp;,totally &nbsp;<b>{$paycount}</b>&nbsp;person bought &nbsp;<b>{$buycount}</b>&nbsp;
+		</td></tr>
+		<tr><td><b>Pay statistics:</b></td><td>online pay:<b>${moneyit($onlinepay)}</b>&nbsp;Dollars &nbsp;&nbsp;&nbsp;&nbsp;Remaining pay:<b>${moneyit($creditpay)}</b>&nbsp;Dollars </td></tr>
+		<tr><td><b>income:</b></td><td>pay amount:<b>${moneyit($onlinepay+$creditpay)}</b>&nbsp;Dollars &nbsp;&nbsp;&nbsp;&nbsp;coupon amount:<b>${moneyit($cardpay)}</b>&nbsp;Dollars </td></tr>
+	<!--{if $team['needline']}-->
+		<tr><th colspan="2"><hr/></th></td>
+		<tr><td colspan="2">
+			<!--{if $team['noticesubscribe']}--><button style="padding:0;" id="dialog_subscribe_button_id" onclick="if(confirm('when sending Email please wait patiently,OK?')){this.disabled=true;return X.misc.noticenext({$team['id']},0);}">Email notice &nbsp;(<span id="dialog_subscribe_count_id">0</span>/{$subcount})</button>&nbsp;<!--{/if}-->
+			<!--{if $team['noticesms']}--><button id="dialog_sms_button_id" onclick="if(confirm('when sending Email please wait patiently,OK?')){this.disabled=true;return X.misc.noticesms({$team['id']},0);}">SMS notice&nbsp;(<span id="dialog_sms_count_id">0</span>/{$couponcount})</button>&nbsp;<!--{/if}-->
+			<!--{if $team['teamcoupon']}--><button onclick="this.disabled=true;return X.manage.teamcoupon({$team['id']});">automatically send coupon&nbsp;({$couponcount}/{$buycount})</button>&nbsp;<!--{/if}-->
+		</td></tr>
+	<!--{/if}-->
+	</table>
+	</div>
+</div>

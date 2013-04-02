@@ -1,0 +1,155 @@
+<!--{include header}-->
+
+<div id="bdw" class="bdw">
+<div id="bd" class="cf">
+<div id="order-detail">
+	<div class="dashboard" id="dashboard">
+		<ul>${current_account(null)}</ul>
+	</div>
+    <div id="content">
+		<div class="box clear">
+            <div class="box-top"></div>
+            <div class="box-content">
+                <div class="head">
+                    <h2>Order info</h2>
+                </div>
+                <div class="sect">
+
+<table cellspacing="0" cellpadding="0" border="0" class="data-table">
+    <tr>
+        <th>Order ID:</th>
+        <td class="orderid"><strong>{$order['id']}</strong></td>
+        <th>Order Time:</th>
+        <td><span>${date('Y-m-d H:i',$order['create_time'])}</span></td>
+    </tr>
+</table>
+
+<table cellspacing="0" cellpadding="0" border="0" class="info-table">
+    <tr>
+        <th class="left" width="auto">Item</th>
+        <th width="35">Price</th>
+        <th width="10"></th>
+        <th width="45">Quantity</th>
+        <th width="10"></th>
+        <th width="45">Price</th>
+        <th width="150">Status</th>
+    </tr>
+    <tr>
+        <td class="left"><a href="/team.php?id={$order['team_id']}" target="_blank">{$team['title']}</a></td>
+        <td><span class="money">{$currency}</span>${moneyit($order['price'])}</td>
+        <td>x</td>
+        <td>{$order['quantity']}</td>
+        <td>=</td>
+        <td class="total"><span class="money">{$currency}</span>${moneyit($order['price']*$order['quantity'])}</td>
+        <td class="status"><!--{if !$express&&!$order['card_id']}-->Transaction success<!--{else}-->-<!--{/if}--></td>
+    </tr>
+
+<!--{if $order['card_id']}-->
+    <tr>
+        <td class="left">Coupon:{$order['card_id']}</td>
+        <td>${moneyit($order['card'])}</td>
+        <td>x</td>
+        <td>1</td>
+        <td>=</td>
+        <td class="total"><span class="money">{$currency}</span>${moneyit($order['card'])}</td>
+        <td class="status">-</td>
+    </tr>
+<!--{/if}-->
+
+<!--{if $express}-->
+    <tr>
+        <td class="left">Delivery</td>
+        <td>${moneyit($team['fare'])}</td>
+        <td>x</td>
+        <td>1</td>
+        <td>=</td>
+        <td class="total"><span class="money">{$currency}</span>${moneyit($team['fare'])}</td>
+        <td class="status">-</td>
+    </tr>
+<!--{/if}-->
+
+<!--{if $express||$order['card_id']}-->
+    <tr>
+        <td class="left"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="total"><span class="money">{$currency}</span>${moneyit($order['origin'])}</td>
+        <td class="status">Transaction success</td>
+    </tr>
+<!--{/if}-->
+
+</table>
+
+<!--{if $order['remark']}-->
+<table cellspacing="0" cellpadding="0" border="0" class="data-table">
+    <tr>
+        <th>Order Remark:</th>
+        <td class="other-coupon">${nl2br(htmlspecialchars($order['remark']))}</td>
+    </tr>
+</table>
+<!--{/if}-->
+<!--{if $team['delivery']=='coupon'}-->
+<table cellspacing="0" cellpadding="0" border="0" class="data-table">
+    <tr>
+        <th>{$INI['system']['couponname']}:</th>
+        <td class="other-coupon"><!--{if empty($coupons)}-->{$INI['system']['couponname']}After buy it,system will send it to you.<!--{/if}--><!--{loop $coupons $one}--><p>{$one['id']} - {$one['secret']}</p><!--{/loop}--></td>
+    </tr>
+    <tr>
+        <th>How to use:</th>
+        <td>Please show {$INI['system']['couponname']},to check coupon's ID and PASSWORD</td>
+    </tr>
+</table>
+<!--{elseif $team['delivery']=='express'}-->
+<table cellspacing="0" cellpadding="0" border="0" class="data-table">
+    <tr>
+        <th>Delivery:</th>
+	<!--{if $order['express_id']}-->
+        <td>{$option_express[$order['express_id']]}:{$order['express_no']}</td>
+	<!--{else}-->
+        <td class="other-coupon">PLease wait..</td>
+	<!--{/if}-->
+    </tr>
+    <tr>
+        <th>Real name:</th>
+        <td>{$order['realname']}</td>
+    </tr>
+    <tr>
+        <th>Address:</th>
+        <td>{$order['address']}</td>
+    </tr>
+    <tr>
+        <th>Mobile number:</th>
+        <td>{$order['mobile']}</td>
+    </tr>
+</table>
+<!--{elseif $team['delivery']=='pickup'}-->
+<table cellspacing="0" cellpadding="0" border="0" class="data-table">
+    <tr>
+        <th>Self get:</th>
+        <td class="other-coupon"></td>
+    </tr>
+    <tr>
+        <th>Get address:</th>
+        <td>{$team['address']}</td>
+    </tr>
+    <tr>
+        <th>Mobile:</th>
+        <td>{$team['mobile']}</td>
+    </tr>
+</table>
+<!--{/if}-->
+                </div>
+            </div>
+            <div class="box-bottom"></div>
+        </div>
+    </div>
+    <div id="sidebar">
+    </div>
+</div>
+
+</div> <!-- bd end -->
+</div> <!-- bdw end -->
+
+<!--{include footer}-->

@@ -1,0 +1,38 @@
+<!--{include manage_header}-->
+
+<div id="bdw" class="bdw">
+<div id="bd" class="cf">
+<div id="coupons">
+	<div class="dashboard" id="dashboard">
+		<ul>${mcurrent_coupon('consume')}</ul>
+	</div>
+    <div id="content" class="coupons-box clear mainwide">
+		<div class="box clear">
+            <div class="box-top"></div>
+            <div class="box-content">
+                <div class="head">
+                    <h2>Already consumed{$INI['system']['couponname']}</h2>
+				</div>
+                <div class="sect">
+					<table id="orders-list" cellspacing="0" cellpadding="0" border="0" class="coupons-table">
+					<tr><th width="100">ID</th><th width="500">item</th><th width="180">User </th><th width="80" nowrap>consume time</th></tr>
+					<!--{loop $coupons $index $one}-->
+					<tr ${$index%2?'':'class="alt"'} id="order-list-id-{$one['id']}">
+						<td>{$one['id']}</td>
+						<td>{$one['team_id']}&nbsp;(<a class="deal-title" href="/team.php?id={$one['team_id']}" target="_blank">{$teams[$one['team_id']]['title']}</a>)</td>
+						<td nowrap>{$users[$one['user_id']]['email']}<br/>{$users[$one['user_id']]['username']}</td>
+						<td nowrap>${date('Y-m-d',$one['consume_time'])}<br/>${date('H:i:s',$one['consume_time'])}</td>
+					</tr>
+					<!--{/loop}-->
+					<tr><td colspan="5">{$pagestring}</tr>
+                    </table>
+				</div>
+            </div>
+            <div class="box-bottom"></div>
+        </div>
+    </div>
+</div>
+</div> <!-- bd end -->
+</div> <!-- bdw end -->
+
+<!--{include manage_footer}-->

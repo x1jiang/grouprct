@@ -1,0 +1,111 @@
+<!--{include header}-->
+
+<div id="bdw" class="bdw">
+<div id="bd" class="cf">
+<div id="content">
+    <div id="deal-buy" class="box">
+        <div class="box-top"></div>
+        <div class="box-content">
+            <div class="head"><h2>Your Order</h2></div>
+            <div class="sect">
+                <table class="order-table">
+                    <tr>
+                        <th class="deal-buy-desc">Item</th>
+                        <th class="deal-buy-quantity">Quantity</th>
+                        <th class="deal-buy-multi"></th>
+                        <th class="deal-buy-price">Price</th>
+                        <th class="deal-buy-equal"></th>
+                        <th class="deal-buy-total">Total </th>
+                    </tr>
+                    <tr>
+                        <td class="deal-buy-desc">{$team['title']}</td>
+                        <td class="deal-buy-quantity">{$order['quantity']}</td>
+                        <td class="deal-buy-multi">x</td>
+                        <td class="deal-buy-price" id="deal-buy-price"><span class="money">{$currency}<span>${moneyit($order['price'])}</td>
+                        <td class="deal-buy-equal">=</td>
+                        <td class="deal-buy-total" id="deal-buy-total"><span class="money">{$currency}</span>${moneyit($order['price']*$order['quantity'])}</td>
+                    </tr>
+					<!--{if $team['delivery']=='express'}-->
+					<tr>
+						<td class="deal-buy-desc">Delivery</td>
+						<td class="deal-buy-quantity"></td>
+						<td class="deal-buy-multi"></td>
+						<td class="deal-buy-price"><span class="money">{$currency}</span><span id="deal-express-price">{$team['fare']}</span></td>
+						<td class="deal-buy-equal">=</td>
+						<td class="deal-buy-total"><span class="money">{$currency}</span><span id="deal-express-total">{$team['fare']}</span></td>
+					</tr>
+					<!--{/if}-->
+					<!--{if $order['card']>0}-->
+				   <tr id="cardcode-row">
+						<td class="deal-buy-desc">Coupon:<span id="cardcode-row-n">{$order['card_id']}</span></td>
+						<td class="deal-buy-quantity"></td>
+						<td class="deal-buy-multi"></td>
+
+						<td class="deal-buy-price"><span class="money">{$currency}</span>${moneyit($order['card'])}</td>
+						<td class="deal-buy-equal">=</td>
+						<td class="deal-buy-total">-<span class="money">¥</span><span id="cardcode-row-t">{$order['card']}</span></td>
+					</tr>
+					<!--{/if}-->
+
+					<tr class="order-total">
+                        <td class="deal-buy-desc"><strong>Total money :</strong></td>
+                        <td class="deal-buy-quantity"></td>
+                        <td class="deal-buy-multi"></td>
+                        <td class="deal-buy-price"></td>
+                        <td class="deal-buy-equal">=</td>
+                        <td class="deal-buy-total"><span class="money">{$currency}</span>{$order['origin']}</td>
+                    </tr>
+                </table>
+				<div class="paytype">
+                <form action="/order/pay.php" method="post" class="validator">
+				<div class="order-check-form ">
+					<div class="order-pay-credit">
+						<h3>Your remaining charge</h3>
+						<p>remaining charge:<strong><span class="money">{$currency}</span>${moneyit($login_user['money'])}</strong> <!--{if $login_user['money']<$order['origin']}-->Your remaining c harge is not enough,still need <strong><span class="money">{$currency}</span>${moneyit($order['origin']-$login_user['money'])}</strong>.Please choose payment way:<!--{else}-->Your remaining charge is enough,please finish payment.<!--{/if}--></p>
+						<div class="other_pay">{$INI['other']['pay']}</div>
+					</div>  
+				<!--{if $login_user['money']<$order['origin']}-->
+					<ul class="typelist">
+					<!--{if $INI['alipay']['mid']}-->
+						<li><input id="check-alipay" type="radio" name="paytype" value="alipay" {$ordercheck['alipay']} />
+						<label for="check-alipay" class="alipay">Paypal,if you have Paypal account.</label>
+						</li>
+					<!--{/if}-->
+					<!--{if $INI['tenpay']['mid']}-->
+						<li><input id="check-tenpay" type="radio" name="paytype" value="tenpay" {$ordercheck['tenpay']} /><label for="check-tenpay" class="tenpay">财付通交易,推荐QQUser 使用</label></li>
+					<!--{/if}-->
+					<!--{if $INI['chinabank']['mid']}-->
+						<li><input id="check-chinabank" type="radio" name="paytype" value="chinabank" {$ordercheck['chinabank']} /><label for="check-chinabank" class="chinabank">支持招商,工行,建行,中行等主流银行的网银支付</label></li>
+					<!--{/if}-->
+					</ul>
+				<!--{else}-->
+					<input type="hidden" name="paytype" value="credit" />
+				<!--{/if}-->
+					<div class="clear"></div>
+					<p class="check-act">
+					<input type="hidden" name="order_id" value="{$order['id']}" />
+					<input type="hidden" name="team_id" value="{$order['team_id']}" />
+					<input type="hidden" name="cardcode" value="" />
+					<input type="hidden" name="quantity" value="{$order['quantity']}" />
+					<input type="hidden" name="address" value="{$order['address']}" />
+					<input type="hidden" name="express" value="{$order['express']}" />
+					<input type="hidden" name="remark" value="{$order['remark']}" />
+					<input type="submit" value="OK & Pay now" class="formbutton" /> <a href="/team/buy.php?id={$order['team_id']}" style="margin-left:1em;">Return Modify Order</a>
+					</p>
+				</div>
+				</form>
+				</div>
+			</div>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+</div>
+<div id="sidebar">
+<!--{if !$order['card_id']}-->
+	<!--{include block_side_card}-->
+<!--{/if}-->
+</div>
+</div> <!-- bd end -->
+</div> <!-- bdw end -->
+
+<!--{include footer}-->

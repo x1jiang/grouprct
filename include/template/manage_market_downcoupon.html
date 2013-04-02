@@ -1,0 +1,46 @@
+<!--{include manage_header}-->
+
+<div id="bdw" class="bdw">
+<div id="bd" class="cf">
+<div id="partner">
+	<div class="dashboard" id="dashboard">
+		<ul>${mcurrent_market('down')}</ul>
+	</div>
+	<div id="content" class="clear mainwide">
+        <div class="clear box">
+            <div class="box-top"></div>
+            <div class="box-content">
+                <div class="head">
+					<h2>{$INI['system']['couponname']}Download</h2>
+					<ul class="filter">${mcurrent_market_down('downcoupon')}</ul>
+				</div>
+                <div class="sect">
+                    <form method="post" target="_blank" class="validator">
+                        <div class="field">
+                            <label>Daily deal item </label>
+							<input type="text" name="team_id" require="true" datatype="number" class="number" /><span class="inputtip">Please input Daily deal item's ID</span>
+						</div>
+
+                        <div class="field">
+                            <label>consume Status</label>
+							<div style="padding-top:8px;"><input type="checkbox" name="consume[]" value="Y" checked />&nbsp;already consumed &nbsp;&nbsp;<input type="checkbox" name="consume[]" value="N" checked>&nbsp;un-consumed </div>
+						</div>
+
+                        <div class="act">
+                            <input type="submit" value="Download" name="commit" class="formbutton"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="box-bottom"></div>
+        </div>
+	</div>
+
+<div id="sidebar">
+</div>
+
+</div>
+</div> <!-- bd end -->
+</div> <!-- bdw end -->
+
+<!--{include manage_footer}-->

@@ -1,0 +1,50 @@
+<!--{include html_header}-->
+
+<div id="hdw">
+	<div id="hd">
+		<div id="logo"><a href="/index.php" class="link"><img src="/static/css/i/logo.gif" /></a></div>
+		<div class="guides">
+			<div class="city">
+				<h2>{$city['name']}</h2>
+			</div>
+			<!--{if count($hotcities)>1}-->
+			<div id="guides-city-change" class="change">Change city</div>
+			<div id="guides-city-list" class="city-list">
+				<ul>${current_city($city['ename'], $hotcities)}</ul>
+			</div>
+			<!--{/if}-->
+		</div>
+		<ul class="nav cf">${current_frontend()}</ul>
+		<div class="refer">&raquo;&nbsp;<a href="/subscribe.php">Email subscribe</a>&nbsp;&nbsp;&nbsp;&raquo;&nbsp;<a href="/account/invite.php">Invite friends</a>&nbsp;&nbsp;&nbsp;&raquo;&nbsp;<a id="verify-coupon-id" href="javascript:;">{$INI['system']['couponname']} verify & consumption register</a>
+		</div>
+		<!--{if $login_user}-->
+		<div class="logins">
+			<ul id="account">
+				<li class="username">Welcome,{$login_user['username']}.</li>
+				<li class="account"><a href="/order/index.php" id="myaccount" class="account">My {$INI['system']['abbreviation']}</a></li>
+				<li class="logout"><a href="/account/logout.php">Exit</a></li>
+			</ul>
+			<div class="line islogin"></div>
+		</div>
+		<ul id="myaccount-menu">
+			<li><a href="/order/index.php">My Order</a></li>
+			<li><a href="/coupon/index.php">My {$INI['system']['couponname']}</a></li>
+			<li><a href="/account/settings.php">Account settings</a></li>
+		</ul>
+		<!--{else}-->
+		<div class="logins">
+			<ul id="account">
+				<li class="login"><a href="/account/login.php">Login</a></li>
+				<li class="signup"><a href="/account/signup.php">Register</a></li>				</ul>
+			<div class="line "></div>
+		</div>
+		<!--{/if}-->
+	</div>
+</div>
+
+<!--{if $session_notice=Session::Get('notice',true)}-->
+<div class="sysmsgw" id="sysmsg-success"><div class="sysmsg"><p>{$session_notice}</p><span class="close">Close</span></div></div> 
+<!--{/if}-->
+<!--{if $session_notice=Session::Get('error',true)}-->
+<div class="sysmsgw" id="sysmsg-error"><div class="sysmsg"><p>{$session_notice}</p><span class="close">Close</span></div></div> 
+<!--{/if}-->
