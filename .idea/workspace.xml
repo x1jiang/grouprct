@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="435b31bb-1b01-4989-bd8d-8031a14285a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/compiled/team_view.php" afterPath="$PROJECT_DIR$/include/compiled/team_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team/buy.php" afterPath="$PROJECT_DIR$/team/buy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/compiled/team_buy.php" afterPath="$PROJECT_DIR$/include/compiled/team_buy.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ogo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/subscribe.html" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364858306137" ignored="false" />
-    <file path="/a.dummy" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364944920618" ignored="false" />
+    <file path="/a.dummy" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364946011001" ignored="false" />
     <file path="/header.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364859371134" ignored="false" />
-    <file path="/Dummy.txt" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364944534134" ignored="false" />
+    <file path="/Dummy.txt" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364945716277" ignored="false" />
     <file path="/buy.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937008537" ignored="false" />
     <file path="/team_index.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937357769" ignored="false" />
     <file path="/team_view.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364943734146" ignored="false" />
     <file path="/customize.js" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364943102314" ignored="false" />
+    <file path="/team_buy.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364946138216" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,21 +89,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buy.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="buy.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/team/buy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="1" selection-start="2786" selection-end="2786" vertical-scroll-proportion="-9.32">
+            <state line="53" column="10" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.45181674">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="team_buy.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="team_buy.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/compiled/team_buy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="0" selection-start="4959" selection-end="5032" vertical-scroll-proportion="0.998452">
+            <state line="45" column="165" selection-start="3165" selection-end="3165" vertical-scroll-proportion="-18.958334">
               <folding>
-                <element signature="n#style#0;n#span#0;n#td#1;n#tr#1;n#table#0;n#div#1;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#5;n#div#1;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,7 +153,6 @@
         <option value="$PROJECT_DIR$/include/compiled/install_step.php" />
         <option value="$PROJECT_DIR$/include/compiled/manage_header.php" />
         <option value="$PROJECT_DIR$/include/compiled/header.php" />
-        <option value="$PROJECT_DIR$/team/buy.php" />
         <option value="$PROJECT_DIR$/include/compiled/team_index.php" />
         <option value="$PROJECT_DIR$/static/jssrc/index.js" />
         <option value="$PROJECT_DIR$/include/configure/system.php" />
@@ -159,6 +160,7 @@
         <option value="$PROJECT_DIR$/static/js/index.js" />
         <option value="$PROJECT_DIR$/include/compiled/team_view.php" />
         <option value="$PROJECT_DIR$/include/compiled/team_buy.php" />
+        <option value="$PROJECT_DIR$/team/buy.php" />
       </list>
     </option>
   </component>
@@ -523,7 +525,11 @@
       <created>1364944542102</created>
       <updated>1364944542102</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009">
+      <created>1364945722101</created>
+      <updated>1364945722101</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -719,19 +725,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/team/buy.php">
+    <entry file="file://$PROJECT_DIR$/include/compiled/team_buy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="1" selection-start="2786" selection-end="2786" vertical-scroll-proportion="-9.32">
-          <folding />
+        <state line="45" column="165" selection-start="3165" selection-end="3165" vertical-scroll-proportion="-18.958334">
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#5;n#div#1;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/compiled/team_buy.php">
+    <entry file="file://$PROJECT_DIR$/team/buy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="4959" selection-end="5032" vertical-scroll-proportion="0.998452">
-          <folding>
-            <element signature="n#style#0;n#span#0;n#td#1;n#tr#1;n#table#0;n#div#1;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="53" column="10" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.45181674">
+          <folding />
         </state>
       </provider>
     </entry>

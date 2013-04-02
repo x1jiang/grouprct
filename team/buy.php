@@ -49,8 +49,9 @@ if ( $_POST ) {
 	$table->quantity = abs(intval($table->quantity));
 
 	if ( $table->quantity == 0 ) {
-		Session::Set('error', 'At least quantity:1');
-		redirect( WEB_ROOT . "/team/buy.php?id={$team['id']}");
+        $table->quantity = 1;
+		//Session::Set('error', 'At least quantity:1');
+		//redirect( WEB_ROOT . "/team/buy.php?id={$team['id']}");
 	} 
 	elseif ( $team['per_number']>0 && $table->quantity > $team['per_number'] ) {
 		Session::Set('error', 'YOu have reached the top limit of allowable quantities.');
