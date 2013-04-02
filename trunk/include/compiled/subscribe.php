@@ -30,7 +30,7 @@
 					<div class="clear"></div>
 				</div>
 				<div class="intro">
-					<p>Random Clinical Trial of the day:</p>
+					<p>Randomized Clinical Trial of the day</p>
 				</div>
 			</div>
 		</div>
