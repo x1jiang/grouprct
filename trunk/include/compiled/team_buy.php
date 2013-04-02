@@ -10,21 +10,21 @@
             <div class="head"><h2>Submit order</h2></div>
             <div class="sect">
             <table class="order-table">
-                <tr>
+                <!--<tr>
                     <th class="deal-buy-desc">Item</th>
                     <th class="deal-buy-quantity">Quantity</th>
                     <th class="deal-buy-multi"></th>
                     <th class="deal-buy-price">Price</th>
                     <th class="deal-buy-equal"></th>
                     <th class="deal-buy-total">Total money</th>
-                </tr>
+                </tr>-->
                 <tr>
                     <td class="deal-buy-desc"><?php echo $team['title']; ?></td>
-                    <td class="deal-buy-quantity"><input type="text" class="input-text f-input" maxlength="4" name="quantity" value="<?php echo $order['quantity']; ?>" id="deal-buy-quantity-input" <?php echo $team['per_number']==1?'readonly':''; ?> /><br /><span style="font-size:12px;color:gray;"><?php if($team['per_number']==0){?>At most 9999<?php } else { ?>At most <?php echo $team['per_number']; ?><?php }?></span></td>
+                   <!-- <td class="deal-buy-quantity"><input type="text" class="input-text f-input" maxlength="4" name="quantity" value="<?php /*echo $order['quantity']; */?>" id="deal-buy-quantity-input" <?php /*echo $team['per_number']==1?'readonly':''; */?> /><br /><span style="font-size:12px;color:gray;"><?php /*if($team['per_number']==0){*/?>At most 9999<?php /*} else { */?>At most <?php /*echo $team['per_number']; */?><?php /*}*/?></span></td>
                     <td class="deal-buy-multi">x</td>
-                    <td class="deal-buy-price"><span class="money"><?php echo $currency; ?></span><span id="deal-buy-price"><?php echo $team['team_price']; ?></span></td>
+                    <td class="deal-buy-price"><span class="money"><?php /*echo $currency; */?></span><span id="deal-buy-price"><?php /*echo $team['team_price']; */?></span></td>
                     <td class="deal-buy-equal">=</td>
-                    <td class="deal-buy-total"><span class="money"><?php echo $currency; ?></span><span id="deal-buy-total"><?php echo $order['quantity']*$team['team_price']; ?></span></td>
+                    <td class="deal-buy-total"><span class="money"><?php /*echo $currency; */?></span><span id="deal-buy-total"><?php /*echo $order['quantity']*$team['team_price']; */?></span></td>-->
                 </tr>
 				<?php if($team['delivery']=='express'){?>
                 <tr>
@@ -37,14 +37,14 @@
                 </tr>
 				<?php }?>
 
-				<tr class="order-total">
+                <!-- <tr class="order-total">
                     <td class="deal-buy-desc"><strong>Order amount:</strong></td>
                     <td class="deal-buy-quantity"></td>
                     <td class="deal-buy-multi"></td>
                     <td class="deal-buy-price"></td>
                     <td class="deal-buy-equal">=</td>
-                    <td class="deal-buy-total"><span class="money"><?php echo $currency; ?></span><strong id="deal-buy-total-t"><?php echo $order['origin']; ?></strong></td>
-                </tr>
+                    <td class="deal-buy-total"><span class="money"><?php /*echo $currency; */?></span><strong id="deal-buy-total-t"><?php /*echo $order['origin']; */?></strong></td>
+                </tr> -->
             </table>
 			<?php if($team['delivery']=='express'){?>
 			<div class="wholetip clear"><h3>Delivery info</h3></div>
