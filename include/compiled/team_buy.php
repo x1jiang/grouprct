@@ -73,7 +73,7 @@
 			</div>
             <input id="deal-buy-cardcode" type="hidden" name="cardcode" maxlength="8" value="" />
             <input type="hidden" name="id" value="<?php echo $order['id']; ?>" />
-			<div class="form-submit"><input type="submit" class="formbutton" name="buy" value="Make sure and buy"/></div>
+			<div class="form-submit"><input type="submit" class="formbutton" name="buy" value="Make sure and join"/></div>
             </div>
         </div>
         <div class="box-bottom"></div>
