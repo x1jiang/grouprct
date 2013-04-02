@@ -130,9 +130,9 @@ window.x_init_hook_clock = function() {
 			var lm = parseInt(ls/60000) ; 
 			var ls = parseInt(Math.round(ls%60000)/1000);
 			if (ld>0) {
-				var html = '<li><span>'+ld+'</span>Days</li><li><span>'+lh+'</span>Hours</li><li><span>'+lm+'</span>Minutes</li>';
+				var html = '<li><span>'+ld+'</span>天</li><li><span>'+lh+'</span>小时</li><li><span>'+lm+'</span>分钟</li>';
 			} else {
-				var html = '<li><span>'+lh+'</span>Hours</li><li><span>'+lm+'</span>Minutes</li><li><span>'+ls+'</span>秒</li>';
+				var html = '<li><span>'+lh+'</span>小时</li><li><span>'+lm+'</span>分钟</li><li><span>'+ls+'</span>秒</li>';
 			}
 			jQuery('ul#counter').html(html);
 		} else {
