@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="435b31bb-1b01-4989-bd8d-8031a14285a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jssrc/customize.js" afterPath="$PROJECT_DIR$/static/jssrc/customize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/index.js" afterPath="$PROJECT_DIR$/static/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jssrc/index.js" afterPath="$PROJECT_DIR$/static/jssrc/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/template/manage_category_index.html" afterPath="$PROJECT_DIR$/include/template/manage_category_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/compiled/manage_category_index.php" afterPath="$PROJECT_DIR$/include/compiled/manage_category_index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/template/manage_system_city.html" afterPath="$PROJECT_DIR$/include/template/manage_system_city.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/compiled/manage_system_city.php" afterPath="$PROJECT_DIR$/include/compiled/manage_system_city.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ogo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/subscribe.html" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364858306137" ignored="false" />
-    <file path="/a.dummy" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364939689547" ignored="false" />
+    <file path="/a.dummy" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364940129470" ignored="false" />
     <file path="/header.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364859371134" ignored="false" />
-    <file path="/Dummy.txt" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364939270403" ignored="false" />
+    <file path="/Dummy.txt" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364941638193" ignored="false" />
     <file path="/buy.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937008537" ignored="false" />
     <file path="/team_index.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937357769" ignored="false" />
     <file path="/team_view.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364938601132" ignored="false" />
@@ -35,33 +36,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="-6.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="team.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/team.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="34" selection-start="1313" selection-end="1313" vertical-scroll-proportion="-26.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buy.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/team/buy.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="36" selection-start="809" selection-end="809" vertical-scroll-proportion="-9.9">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="manage_ajax_dialog_teamdetail.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/compiled/manage_ajax_dialog_teamdetail.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,10 +65,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="73971" selection-end="73971" vertical-scroll-proportion="0.02238806">
+            <state line="1" column="0" selection-start="73971" selection-end="73971" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DB.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/library/DB.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="15" selection-start="729" selection-end="730" vertical-scroll-proportion="-6.62">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PHPMailer.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/library/PHPMailer.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="5" selection-start="3529" selection-end="3529" vertical-scroll-proportion="-4.72">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="system.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/include/configure/system.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="2" selection-start="152" selection-end="152" vertical-scroll-proportion="0.2276176">
               <folding />
             </state>
           </provider>
@@ -103,7 +104,7 @@
       <file leaf-file-name="customize.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/jssrc/customize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="50" selection-start="5658" selection-end="5658" vertical-scroll-proportion="0.0">
+            <state line="135" column="13" selection-start="5732" selection-end="5732" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,8 +140,9 @@
         <option value="$PROJECT_DIR$/include/compiled/team_index.php" />
         <option value="$PROJECT_DIR$/include/compiled/team_view.php" />
         <option value="$PROJECT_DIR$/static/js/index.js" />
-        <option value="$PROJECT_DIR$/static/jssrc/customize.js" />
         <option value="$PROJECT_DIR$/static/jssrc/index.js" />
+        <option value="$PROJECT_DIR$/include/configure/system.php" />
+        <option value="$PROJECT_DIR$/static/jssrc/customize.js" />
       </list>
     </option>
   </component>
@@ -151,8 +153,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="204" />
-    <option name="y" value="228" />
+    <option name="x" value="123" />
+    <option name="y" value="136" />
     <option name="width" value="1796" />
     <option name="height" value="1178" />
   </component>
@@ -255,6 +257,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ogo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ogo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -295,11 +329,7 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="false" />
             <option name="myId" value="UPDATED" />
-            <PATH vcs="svn" revision="11">$PROJECT_DIR$/include/compiled/manage_category_index.php</PATH>
-            <PATH vcs="svn" revision="11">$PROJECT_DIR$/include/compiled/manage_system_city.php</PATH>
-            <PATH vcs="svn" revision="11">$PROJECT_DIR$/include/configure/system.php</PATH>
-            <PATH vcs="svn" revision="11">$PROJECT_DIR$/include/template/manage_category_index.html</PATH>
-            <PATH vcs="svn" revision="11">$PROJECT_DIR$/include/template/manage_system_city.html</PATH>
+            <PATH vcs="svn" revision="14">$PROJECT_DIR$/static/icon/favicon.ico</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Created" />
@@ -343,6 +373,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="MERGED_WITH_CONFLICTS" />
+          <PATH vcs="svn" revision="14">$PROJECT_DIR$/include/configure/system.php</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Merged with tree conflicts" />
@@ -482,14 +513,18 @@
       <created>1364939281105</created>
       <updated>1364939281105</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004">
+      <created>1364939845108</created>
+      <updated>1364939845108</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="204" y="228" width="1796" height="1178" extended-state="0" />
+    <frame x="123" y="136" width="1796" height="1178" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924527" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924527" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924527" sideWeight="0.99898887" order="1" side_tool="false" content_ui="tabs" />
@@ -500,7 +535,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39811322" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924527" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924527" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -572,30 +607,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/compiled/manage_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="216" selection-end="216" vertical-scroll-proportion="-4.071429" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/compiled/install_step.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="661" selection-end="754" vertical-scroll-proportion="-10.178572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/template/manage_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="66" selection-start="146" selection-end="260" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/compiled/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="101" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.72077924">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="28" selection-start="7903" selection-end="7903" vertical-scroll-proportion="1.119951">
@@ -661,6 +672,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="73971" selection-end="73971" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/library/DB.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="15" selection-start="729" selection-end="730" vertical-scroll-proportion="-6.62">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jssrc/customize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="13" selection-start="5732" selection-end="5732" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/jssrc/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="73971" selection-end="73971" vertical-scroll-proportion="0.0">
@@ -668,16 +700,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/jssrc/customize.js">
+    <entry file="file://$PROJECT_DIR$/include/library/PHPMailer.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="50" selection-start="5658" selection-end="5658" vertical-scroll-proportion="0.0">
+        <state line="91" column="5" selection-start="3529" selection-end="3529" vertical-scroll-proportion="-4.72">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/index.js">
+    <entry file="file://$PROJECT_DIR$/include/configure/system.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="73971" selection-end="73971" vertical-scroll-proportion="0.02238806">
+        <state line="10" column="2" selection-start="152" selection-end="152" vertical-scroll-proportion="0.2276176">
           <folding />
         </state>
       </provider>
