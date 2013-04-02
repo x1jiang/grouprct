@@ -4,8 +4,8 @@ $INI = array (
   array (
     'host' => 'localhost',
     'user' => 'root',
-    'pass' => 'Loseme4ever!',
-    'name' => 'zuitu_db',
+    'pass' => '551125xq',
+    'name' => 'ogo',
   ),
 );
 ?>
