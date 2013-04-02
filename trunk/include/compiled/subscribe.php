@@ -10,7 +10,7 @@
 					 <h2>Email subscribe</h2>
 				</div>
                 <div class="sect">
-					<div class="lead"><h4>In <?php echo $city['name']; ?> Everyday's random clinical trial will be sent to your email.</h4></div>
+					<div class="lead"><h4>In <?php echo $city['name']; ?> Everyday's research projects will be sent to your email.</h4></div>
 					<div class="enter-address">
 						<p>subscribe.</p>
 						<div class="enter-address-c">
