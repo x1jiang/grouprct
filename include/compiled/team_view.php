@@ -78,7 +78,7 @@
 				<?php if($team['close_time']==0){?>
 					<?php if($team['state']=='none'){?>
 					<div class="deal-box deal-status" id="deal-status">
-						<p class="deal-buy-tip-top"><strong><?php echo $team['now_number']; ?></strong> 人已购买</p>
+						<p class="deal-buy-tip-top"><strong><?php echo $team['now_number']; ?></strong> users joined</p>
 						<div class="progress-pointer" style="padding-left:<?php echo $bar_size-$bar_offset; ?>px;"><span></span></div>
 						<div class="progress-bar"><div class="progress-left" style="width:<?php echo $bar_size-$bar_offset; ?>px;"></div><div class="progress-right "></div></div>
 						<div class="cf"><div class="min">0</div><div class="max"><?php echo $team['min_number']; ?></div></div>
