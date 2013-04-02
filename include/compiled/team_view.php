@@ -161,12 +161,12 @@
             </div>
     </div>
     <div id="sidebar">
-		<?php include template("block_side_invite");?>
+		<?php /*include template("block_side_invite");*/?>
 		<?php include template("block_side_bulletin");?>
 		<?php include template("block_side_flv");?>
 		<?php include template("block_side_ask");?>
 		<?php include template("block_side_others");?>
-		<?php include template("block_side_business");?>
+		<?php /*include template("block_side_business");*/?>
 		<?php include template("block_side_subscribe");?>
 	</div>
 </div>
