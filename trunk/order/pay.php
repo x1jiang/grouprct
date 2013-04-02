@@ -25,7 +25,7 @@ if (is_post()&&$_POST['paytype']) {
 	$order = Table::Fetch('order', $order_id);
 	$order['service'] = pay_getservice($_POST['paytype']);
 }
-
+$order['state'] = 'pay';
 //payed order
 if ( $order['state'] == 'pay' ) {  
 	if ( is_get() ) {
