@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="435b31bb-1b01-4989-bd8d-8031a14285a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/compiled/team_index.php" afterPath="$PROJECT_DIR$/include/compiled/team_index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jssrc/customize.js" afterPath="$PROJECT_DIR$/static/jssrc/customize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/index.js" afterPath="$PROJECT_DIR$/static/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jssrc/index.js" afterPath="$PROJECT_DIR$/static/jssrc/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/compiled/team_view.php" afterPath="$PROJECT_DIR$/include/compiled/team_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ogo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/subscribe.html" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364858306137" ignored="false" />
-    <file path="/a.dummy" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937236958" ignored="false" />
+    <file path="/a.dummy" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364938950272" ignored="false" />
     <file path="/header.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364859371134" ignored="false" />
-    <file path="/Dummy.txt" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937857777" ignored="false" />
+    <file path="/Dummy.txt" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937942383" ignored="false" />
     <file path="/buy.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937008537" ignored="false" />
     <file path="/team_index.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937357769" ignored="false" />
+    <file path="/team_view.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364938601132" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,10 +83,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="team_view.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="team_view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/compiled/team_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="9" selection-start="292" selection-end="292" vertical-scroll-proportion="0.13931888">
+            <state line="77" column="51" selection-start="4945" selection-end="4945" vertical-scroll-proportion="-7.42">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="73990" selection-end="73990" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customize.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/jssrc/customize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="134" column="50" selection-start="5669" selection-end="5669" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/jssrc/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="73990" selection-end="73990" vertical-scroll-proportion="0.02238806">
               <folding />
             </state>
           </provider>
@@ -110,6 +139,9 @@
         <option value="$PROJECT_DIR$/team/buy.php" />
         <option value="$PROJECT_DIR$/include/compiled/team_index.php" />
         <option value="$PROJECT_DIR$/include/compiled/team_view.php" />
+        <option value="$PROJECT_DIR$/static/jssrc/index.js" />
+        <option value="$PROJECT_DIR$/static/jssrc/customize.js" />
+        <option value="$PROJECT_DIR$/static/js/index.js" />
       </list>
     </option>
   </component>
@@ -327,17 +359,21 @@
       <created>1364930760106</created>
       <updated>1364930760106</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002">
+      <created>1364937953102</created>
+      <updated>1364937953102</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="54" width="1796" height="1178" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924527" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924527" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924527" sideWeight="0.99898887" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924527" sideWeight="0.99898887" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16285715" sideWeight="0.67075473" order="0" side_tool="false" content_ui="combo" />
@@ -417,25 +453,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/library/UniversalFeedCreator.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1765" column="39" selection-start="56993" selection-end="56993" vertical-scroll-proportion="-10.321428" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/template/mail_subscribe_team.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="275" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/template/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="54" selection-start="60" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/compiled/manage_header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="25" selection-start="216" selection-end="216" vertical-scroll-proportion="-4.071429" />
@@ -520,7 +537,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/compiled/team_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="292" selection-end="292" vertical-scroll-proportion="0.13931888">
+        <state line="77" column="51" selection-start="4945" selection-end="4945" vertical-scroll-proportion="-7.42">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="73990" selection-end="73990" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jssrc/customize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="50" selection-start="5669" selection-end="5669" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jssrc/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="73990" selection-end="73990" vertical-scroll-proportion="0.02238806">
           <folding />
         </state>
       </provider>
