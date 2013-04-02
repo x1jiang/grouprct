@@ -29,22 +29,34 @@
                         <p class="deal-price"><strong><?php echo $currency; ?><?php echo moneyit($team['team_price']); ?></strong><span><a <?php echo $team['begin_time']<time()?'href="/team/buy.php?id='.$team['id'].'"':''; ?>><img src="/static/css/i/button-deal-buy.gif" /></a></span></p>
 					<?php }?>
                     </div>
-                    <table class="deal-discount">
+                     <table class="deal-discount">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+							<td></td>
+                        </tr>
+                    </table>
+                   <!-- <table class="deal-discount">
                         <tr>
                             <th>Retail Price</th>
                             <th>Discount</th>
                             <th>Save</th>
                         </tr>
                         <tr>
-                            <td><?php echo $currency; ?><?php echo moneyit($team['market_price']); ?></td>
-						<?php if(($team['market_price']>0&&$team['team_price']>0)){?>
-                            <td><?php echo moneyit($discount_rate); ?></td>
-						<?php } else { ?>
+                            <td><?php /*echo $currency; */?><?php /*echo moneyit($team['market_price']); */?></td>
+						<?php /*if(($team['market_price']>0&&$team['team_price']>0)){*/?>
+                            <td><?php /*echo moneyit($discount_rate); */?></td>
+						<?php /*} else { */?>
 							<td>?</td>
-						<?php }?>
-                            <td><?php echo $currency; ?><?php echo $discount_price; ?></td>
+						<?php /*}*/?>
+                            <td><?php /*echo $currency; */?><?php /*echo $discount_price; */?></td>
                         </tr>
-                    </table>
+                    </table>-->
 					<?php if($team['close_time']){?>
                     <div class="deal-box deal-timeleft deal-off" id="deal-timeleft" curtime="<?php echo $now; ?>000" diff="<?php echo $diff_time; ?>000">
 						<h3>Ended </h3>
