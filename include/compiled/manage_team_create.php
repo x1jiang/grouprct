@@ -52,7 +52,7 @@
 						<div style="float:left;"><textarea cols="45" rows="5" name="summary" id="team-create-summary" class="f-textarea" datatype="require" require="true"></textarea></div>
 					</div>
 					<div class="field">
-						<label>hints</label>
+						<label>Additional Information</label>
 						<div style="float:left;"><textarea cols="45" rows="5" name="notice" id="team-create-notice" class="f-textarea editor"><?php echo $team['notice']; ?></textarea></div>
 						<span class="hint">valid period,hint</span>
 					</div>

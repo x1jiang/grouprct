@@ -10,7 +10,7 @@
 					 <h2>Email subscribe</h2>
 				</div>
                 <div class="sect">
-					<div class="lead"><h4>In <?php echo $city['name']; ?> Everyday's research projects will be sent to your email.</h4></div>
+					<div class="lead"><h4> <?php echo $city['name']; ?>'s randomized clinical trial projects will be sent to your email.</h4></div>
 					<div class="enter-address">
 						<p>subscribe.</p>
 						<div class="enter-address-c">
@@ -18,7 +18,7 @@
 						<div class="mail">
 							<label>Email address:</label>
 							<input id="enter-address-mail" name="email" class="f-input f-mail" type="text" value="<?php echo $login_user['email']; ?>" size="20" require="true" datatype="email" />
-							<span class="tip">Please don't worry,we hate spam email</span>
+							<span class="tip">Please don't worry, we hate spam email</span>
 						</div>
 						<div class="city">
 							<label>&nbsp;</label>

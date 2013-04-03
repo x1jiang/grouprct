@@ -16,7 +16,7 @@
 		<?php /*include template("block_team_share");*/?>
 		<div id="content">
 			<div id="deal-intro" class="cf">
-                <h1><?php if($team['close_time']==0){?><a class="deal-today-link" href="/team.php?id=<?php echo $team['id']; ?>">Deal today:</a><?php }?><?php echo $team['title']; ?></h1>
+                <h1><?php if($team['close_time']==0){?><a class="deal-today-link" href="/team.php?id=<?php echo $team['id']; ?>"></a><?php }?><?php echo $team['title']; ?></h1>
                 <div class="main">
                     <div class="deal-buy">
                         <div class="deal-price-tag"></div>
