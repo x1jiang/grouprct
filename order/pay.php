@@ -25,7 +25,7 @@ if (is_post()&&$_POST['paytype']) {
 	$order = Table::Fetch('order', $order_id);
 	$order['service'] = pay_getservice($_POST['paytype']);
 }
-$order['state'] = 'pay';
+//$order['state'] = 'pay';
 //payed order
 if ( $order['state'] == 'pay' ) {  
 	if ( is_get() ) {
@@ -38,7 +38,7 @@ if ( $order['state'] == 'pay' ) {
 
 $team = Table::Fetch('team', $order['team_id']);
 $randno = rand(1000,9999);
-$total_money = moneyit($order['origin'] - $login_user['money']);
+$total_money = -1; //moneyit($order['origin'] - $login_user['money']);
 if ($total_money<0) { $total_money = 0; $order['service'] = 'credit'; }
 
 /* credit pay */
