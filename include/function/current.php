@@ -3,7 +3,7 @@ function current_frontend() {
 	global $INI;
 	$a = array(
 			'/index.php' => 'Today',
-			'/team/index.php' => 'History',
+			'/team/index.php' => 'All RCTs',
 			'/help/tour.php' => 'Our' . $INI['system']['abbreviation'],
 			'/subscribe.php' => 'Subscribe',
 			);
