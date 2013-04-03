@@ -4,7 +4,7 @@ function current_frontend() {
 	$a = array(
 			'/index.php' => 'Today',
 			'/team/index.php' => 'All RCTs',
-			'/help/tour.php' => 'Our' . $INI['system']['abbreviation'],
+			'/help/tour.php' =>  $INI['system']['abbreviation'] .' Guide',
 			'/subscribe.php' => 'Subscribe',
 			);
 	if (option_yes('navforum')) {
