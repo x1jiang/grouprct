@@ -81,7 +81,7 @@
 						<div class="progress-pointer" style="padding-left:<?php echo $bar_size-$bar_offset; ?>px;"><span></span></div>
 						<div class="progress-bar"><div class="progress-left" style="width:<?php echo $bar_size-$bar_offset; ?>px;"></div><div class="progress-right "></div></div>
 						<div class="cf"><div class="min">0</div><div class="max"><?php echo $team['min_number']; ?></div></div>
-						<p class="deal-buy-tip-btm">Still need <strong><?php echo $team['min_number']-$team['now_number']; ?></strong> to reach to the minimum numbers</p>
+						<p class="deal-buy-tip-btm">Still need <strong><?php echo $team['min_number']-$team['now_number']; ?></strong> to reach to the minimum number for the study</p>
 					</div>
 					<?php } else { ?>
 					<div class="deal-box deal-status deal-status-open" id="deal-status">
