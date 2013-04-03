@@ -12,7 +12,7 @@
 					<?php if($money){?>
 					<p class="notice-total">You have successfully invited <strong><?php echo $count; ?></strong> ,totally get <strong><span class="money"><?php echo $currency; ?></span><?php echo $count*$INI['system']['invitecredit']; ?></strong> Coupon,<a href="/account/refer.php">check successful list</a>.</p>
 					<?php }?>
-					<p class="intro">When your friends get Your invitation,and joined research projects listed in <?php echo $INI['system']['sitename']; ?>, our system will send you an $10 Starbucks card in 24 hours <?php echo $INI['system']['invitecredit']; ?> to Your <?php echo $INI['system']['sitename']; ?>account..</p>
+					<p class="intro">When your friends get Your invitation,and joined research projects listed in <?php echo $INI['system']['sitename']; ?>, our system will send you an $10 Starbucks card in 24 hours to Your <?php echo $INI['system']['sitename']; ?> account.</p>
 					<div class="share-links">
 						<ul class="share-list cf">
 							<li class="site">
@@ -26,9 +26,6 @@
             </div>
             <div class="box-bottom"></div>
         </div>
-    </div>
-    <div id="sidebar">
-		<?php include template("block_side_invitetip");?>
     </div>
 </div>
 </div> <!-- bd end -->
