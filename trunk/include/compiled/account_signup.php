@@ -57,7 +57,7 @@
             <div class="sbox-content">
                 <div class="side-tip">
                     <h2>Has<?php echo $INI['system']['abbreviation']; ?>account?</h2>
-                    <p> <a href="/account/login.php">Login</a>.</p>
+                    <p> <a href="/account/login.php">Login</a></p>
                 </div>
             </div>
             <div class="sbox-bottom"></div>
