@@ -13,7 +13,7 @@
                 <div class="head"><h2>Account settings</h2></div>
                 <div class="sect">
                     <form id="settings-form" method="post" action="/account/settings.php" enctype="multipart/form-data" class="validator">
-						<div class="wholetip clear"><h3>1,basic info</h3></div>
+						<div class="wholetip clear"><h3>Basic Information</h3></div>
                         <div class="field email">
                             <label>Email</label>
                             <input type="text" size="30" name="email" id="settings-email-address" class="f-input readonly" readonly="readonly" value="<?php echo $login_user['email']; ?>" />
@@ -43,32 +43,31 @@
                             <label>Gendre</label>
 							<select name="gender" class="f-city"><?php echo Utility::Option($option_gender, $login_user['gender']); ?></select>
                         </div>
-						<div class="wholetip clear"><h3>3,contact info</h3></div>
+						<div class="wholetip clear"><h3>Additional Information</h3></div>
                         <div class="field mobile">
-                            <label>Mobile number</label>
+                            <label>Mobile</label>
                             <input type="text" size="30" name="mobile" id="settings-mobile" class="number" value="<?php echo $login_user['mobile']; ?>" /><span class="inputtip">Mobile number is the important way that we contact you.</span>
                         </div>
                         <div class="field password">
-                            <label>QQ</label>
+                            <label>Home phone</label>
                             <input type="text" size="30" name="qq" id="settings-qq" class="number" value="<?php echo $login_user['qq']; ?>" />
                         </div>
-						<div class="field city">
-                            <label>City</label>
-							<select name="city_id" class="f-city"><?php echo Utility::Option(Utility::OptionArray($hotcities, 'id', 'name'), $login_user['city_id']); ?><option value='0'>Others </option></select>
-                        </div>
-						<div class="wholetip clear"><h3>2,Delivery info</h3></div>
                         <div class="field username">
-                            <label>real Name</label>
+                            <label>Full Name</label>
                             <input type="text" size="30" name="realname" id="settings-realname" class="f-input" value="<?php echo $login_user['realname']; ?>" />
-                        </div>
-                        <div class="field">
-                            <label>Zip code </label>
-                            <input type="text" maxLength=6 size="10" name="zipcode" id="settings-zipcode" class="f-input number" value="<?php echo $login_user['zipcode']; ?>" />
                         </div>
                         <div class="field username">
                             <label>Address</label>
                             <input type="text" size="30" name="address" id="settings-address" class="f-input" value="<?php echo $login_user['address']; ?>" />
                             <span class="hint">Please fill it completely</span>
+                        </div>
+                        <div class="field city">
+                            <label>City</label>
+                            <select name="city_id" class="f-city"><?php echo Utility::Option(Utility::OptionArray($hotcities, 'id', 'name'), $login_user['city_id']); ?><option value='0'>Others </option></select>
+                        </div>
+                        <div class="field">
+                            <label>Zip code </label>
+                            <input type="text" maxLength=6 size="10" name="zipcode" id="settings-zipcode" class="f-input number" value="<?php echo $login_user['zipcode']; ?>" />
                         </div>
                         <div class="clear"></div>
                         <div class="act">

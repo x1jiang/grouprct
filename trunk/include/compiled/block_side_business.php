@@ -3,8 +3,8 @@
 	<div class="sbox-top"></div>
 	<div class="sbox-content">
 		<div class="tip">
-			<h2>I will provide daily deal info</h2>
-			<p>Cool guys,merchants,<a href="/feedback/seller.php">please click here</a></p>
+			<h2>I will provide new Randomized Clinical Trial information</h2>
+			<p><a href="/feedback/seller.php"> Please click here</a></p>
 		</div>
 	</div>
 	<div class="sbox-bottom"></div>

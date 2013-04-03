@@ -10,7 +10,7 @@
         <div class="box">
             <div class="box-top"></div>
             <div class="box-content">
-                <div class="head"><h2><?php echo $INI['system']['abbreviation']; ?>?</h2></div>
+                <div class="head"><h2>What is <?php echo $INI['system']['abbreviation']; ?>?</h2></div>
                 <div class="sect"><?php echo $page['value']; ?></div>
             </div>
             <div class="box-bottom"></div>
