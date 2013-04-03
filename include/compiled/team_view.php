@@ -2,10 +2,11 @@
 
 <div id="bdw" class="bdw">
 <div id="bd" class="cf">
+<?php if(is_newbie()){?><div id="sysmsg-guide"><div class="link"><a href="/help/tour.php"></a></div><a id="sysmsg-guide-close" href="javascript:void(0);" class="close">Close</a></div><?php }?>
 
 <?php if($team['close_time']){?>
 <div id="sysmsg-tip" class="sysmsg-tip-deal-close"><div class="sysmsg-tip-top"></div><div class="sysmsg-tip-content"><div class="deal-close"><div class="focus">Sorry,you are later,<br />transaction ended today.</div><div id="tip-deal-subscribe-body" class="body"><form id="tip-deal-subscribe-form" method="post" action="/subscribe.php" class="validator"><table><tr>
-              <td>Never miss tomorrow's daily deal?Now subscribe:&nbsp;</td><td><input type="text" name="email" class="f-text" value="" require="true" datatype="email" /></td><td>&nbsp;<input class="commit" type="submit" value="Subscribe" /></td></tr></table></form></div></div><span id="sysmsg-tip-close" class="sysmsg-tip-close">Close</span></div><div class="sysmsg-tip-bottom"></div></div>
+              <td>Never miss momorrow's daily deal?Now subscribe:&nbsp;</td><td><input type="text" name="email" class="f-text" value="" require="true" datatype="email" /></td><td>&nbsp;<input class="commit" type="submit" value="Subscribe" /></td></tr></table></form></div></div><span id="sysmsg-tip-close" class="sysmsg-tip-close">Close</span></div><div class="sysmsg-tip-bottom"></div></div>
 <?php }?>
 
 <?php if($order){?>
@@ -13,10 +14,10 @@
 <?php }?>
 
 	<div id="deal-default">
-		<?php /*include template("block_team_share");*/?>
+		<?php include template("block_team_share");?>
 		<div id="content">
 			<div id="deal-intro" class="cf">
-                <h1><?php if($team['close_time']==0){?><a class="deal-today-link" href="/team.php?id=<?php echo $team['id']; ?>"></a><?php }?><?php echo $team['title']; ?></h1>
+                <h1><?php if($team['close_time']==0){?><a class="deal-today-link" href="/team.php?id=<?php echo $team['id']; ?>">Deal today:</a><?php }?><?php echo $team['title']; ?></h1>
                 <div class="main">
                     <div class="deal-buy">
                         <div class="deal-price-tag"></div>
@@ -25,37 +26,25 @@
 					<?php } else if($team['close_time']) { ?>
                         <p class="deal-price"><strong><?php echo $currency; ?><?php echo moneyit($team['team_price']); ?></strong><span class="deal-price-expire"></span></p>
 					<?php } else { ?>
-                        <p class="deal-price"><span><a <?php echo $team['begin_time']<time()?'href="/team/buy.php?id='.$team['id'].'"':''; ?>><img src="/static/css/i/button-deal-buy.gif" /></a></span></p>
+                        <p class="deal-price"><strong><?php echo $currency; ?><?php echo moneyit($team['team_price']); ?></strong><span><a <?php echo $team['begin_time']<time()?'href="/team/buy.php?id='.$team['id'].'"':''; ?>><img src="/static/css/i/button-deal-buy.gif" /></a></span></p>
 					<?php }?>
                     </div>
-                     <table class="deal-discount">
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-							<td></td>
-                        </tr>
-                    </table>
-                   <!-- <table class="deal-discount">
+                    <table class="deal-discount">
                         <tr>
                             <th>Retail Price</th>
                             <th>Discount</th>
                             <th>Save</th>
                         </tr>
                         <tr>
-                            <td><?php /*echo $currency; */?><?php /*echo moneyit($team['market_price']); */?></td>
-						<?php /*if(($team['market_price']>0&&$team['team_price']>0)){*/?>
-                            <td><?php /*echo moneyit($discount_rate); */?></td>
-						<?php /*} else { */?>
+                            <td><?php echo $currency; ?><?php echo moneyit($team['market_price']); ?></td>
+						<?php if(($team['market_price']>0&&$team['team_price']>0)){?>
+                            <td><?php echo moneyit($discount_rate); ?></td>
+						<?php } else { ?>
 							<td>?</td>
-						<?php /*}*/?>
-                            <td><?php /*echo $currency; */?><?php /*echo $discount_price; */?></td>
+						<?php }?>
+                            <td><?php echo $currency; ?><?php echo $discount_price; ?></td>
                         </tr>
-                    </table>-->
+                    </table>
 					<?php if($team['close_time']){?>
                     <div class="deal-box deal-timeleft deal-off" id="deal-timeleft" curtime="<?php echo $now; ?>000" diff="<?php echo $diff_time; ?>000">
 						<h3>Ended </h3>
@@ -64,7 +53,7 @@
 					<?php } else { ?>
                     <div class="deal-box deal-timeleft deal-on" id="deal-timeleft" curtime="<?php echo $now; ?>000" diff="<?php echo $diff_time; ?>000">
 						<h3>Remaining Time</h3>
-						<div class="limitdate"><ul>
+						<div class="limitdate"><ul id="counter">
 						<?php if($left_day>0){?>
 							<li><span><?php echo $left_day; ?></span>Days</li><li><span><?php echo $left_hour; ?></span>Hours</li><li><span><?php echo $left_minute; ?></span>Minutes</li>
 						<?php } else { ?>
@@ -77,11 +66,11 @@
 				<?php if($team['close_time']==0){?>
 					<?php if($team['state']=='none'){?>
 					<div class="deal-box deal-status" id="deal-status">
-						<p class="deal-buy-tip-top"><strong><?php echo $team['now_number']; ?></strong> users joined</p>
+						<p class="deal-buy-tip-top"><strong><?php echo $team['now_number']; ?></strong> 人已购买</p>
 						<div class="progress-pointer" style="padding-left:<?php echo $bar_size-$bar_offset; ?>px;"><span></span></div>
 						<div class="progress-bar"><div class="progress-left" style="width:<?php echo $bar_size-$bar_offset; ?>px;"></div><div class="progress-right "></div></div>
 						<div class="cf"><div class="min">0</div><div class="max"><?php echo $team['min_number']; ?></div></div>
-						<p class="deal-buy-tip-btm">Still need <strong><?php echo $team['min_number']-$team['now_number']; ?></strong> to reach to the minimum number for the study</p>
+						<p class="deal-buy-tip-btm">Still need <strong><?php echo $team['min_number']-$team['now_number']; ?></strong> to reach to the minimum numbers</p>
 					</div>
 					<?php } else { ?>
 					<div class="deal-box deal-status deal-status-open" id="deal-status">
@@ -160,12 +149,12 @@
             </div>
     </div>
     <div id="sidebar">
-		<?php /*include template("block_side_invite");*/?>
+		<?php include template("block_side_invite");?>
 		<?php include template("block_side_bulletin");?>
 		<?php include template("block_side_flv");?>
 		<?php include template("block_side_ask");?>
 		<?php include template("block_side_others");?>
-		<?php /*include template("block_side_business");*/?>
+		<?php include template("block_side_business");?>
 		<?php include template("block_side_subscribe");?>
 	</div>
 </div>
