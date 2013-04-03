@@ -2,7 +2,9 @@
 
 <div id="hdw">
 	<div id="hd">
-		<div id="logo"><a href="/manage/index.php">Admin's panel |</a>    <a href="/biz/index.php">Researchers' panel</a></div>
+		<div id="logo">
+            <a href="/index.php" class="link" target="_blank"><img src="/static/css/i/logo.gif" /></a>
+           </br> <a href="/manage/index.php">Admin's panel |</a>   <a href="/biz/index.php">Researchers' panel</a></div>
   <div class="guides">
 			<div class="city">
 				<h2><?php echo $city['name']; ?> </h2>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" id="<?php echo $INI['sn']['sn']; ?>">
 <head>
 	<meta http-equiv=content-type content="text/html; charset=UTF-8">
-	<title><?php echo $INI['system']['sitename']; ?> - Merchant Admin part</title>
+	<title><?php echo $INI['system']['sitename']; ?> - Researcher portal</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 	<link rel="shortcut icon" href="/static/icon/favicon.ico" />
 	<link rel="stylesheet" href="/static/css/index.css" type="text/css" media="screen" charset="utf-8" />
