@@ -16,28 +16,6 @@
             <div class="box-bottom"></div>
         </div>
 	</div>
-    <div id="sidebar">
-        <div class="sbox-white">
-            <div class="sbox-top"></div>
-            <div class="sbox-content">
-                <div class="side-tip-help">
-                    <p>
-                        <a href="/help/zuitu.php"><img src="/static/img/faq-how-it-works1.gif"></a>
-                        <span>A Everyday one cool product.</span>
-                    </p>
-                    <p>
-                        <a href="/help/zuitu.php"><img src="/static/img/faq-how-it-works2.gif"></a>
-                        <span>B Reaching to minimal deals and enjoy shopping.</span>
-                    </p>
-                    <p>
-                        <a href="/help/zuitu.php"><img src="/static/img/faq-how-it-works3.gif"></a>
-                        <span>C New surprises tomorrow.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="sbox-bottom"></div>
-        </div>
-    </div>
 </div>
 </div> <!-- bd end -->
 </div> <!-- bdw end -->
