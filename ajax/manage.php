@@ -194,8 +194,8 @@ else if ( 'orderview' == $action) {
 		'cash' => 'cash',
 	);
 	$paystate = array(
-		'unpay' => '<font color="green">unpay</font>',
-		'pay' => '<font color="red">pay</font>',
+		'unpay' => '<font color="green">pending</font>',
+		'pay' => '<font color="red">joined</font>',
 	);
 	$option_refund = array(
 		'credit' => 'refund to account',

@@ -88,9 +88,9 @@ function current_coupon_sub($selector='index') {
 function current_account($selector='/account/settings.php') {
 	global $INI;
 	$a = array(
-		'/order/index.php' => 'My orders',
-		'/coupon/index.php' => 'My ' . $INI['system']['couponname'],
-		'/credit/index.php' => 'My account',
+		'/order/index.php' => 'My projects',
+//		'/coupon/index.php' => 'My ' . $INI['system']['couponname'],
+//		'/credit/index.php' => 'My account',
 		'/account/settings.php' => 'Account info',
 	);
 	return current_link($selector, $a, true);
@@ -112,9 +112,9 @@ function current_about($selector='us') {
 function current_help($selector='faqs') {
 	global $INI;
 	$a = array(
-		'/help/tour.php' => 'Our' . $INI['system']['abbreviation'],
+		'/help/tour.php' => 'Tour',
 		'/help/faqs.php' => 'FAQs',
-		'/help/zuitu.php' => 'What '.$INI['system']['abbreviation'] . '?',
+		'/help/zuitu.php' => 'About '.$INI['system']['abbreviation'] . '?',
 	);
 	$l = "/help/{$selector}.php";
 	return current_link($l, $a, true);
@@ -124,8 +124,8 @@ function current_order_index($selector='index') {
 	$selector = $selector ? $selector : 'index';
 	$a = array(
 		'/order/index.php?s=index' => 'All',
-		'/order/index.php?s=unpay' => 'unpay',
-		'/order/index.php?s=pay' => 'pay',
+		'/order/index.php?s=unpay' => 'pending',
+		'/order/index.php?s=pay' => 'joined',
 	);
 	$l = "/order/index.php?s={$selector}";
 	return current_link($l, $a);
