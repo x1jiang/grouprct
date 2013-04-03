@@ -4,7 +4,7 @@
 <div id="bd" class="cf">
 <div id="consult">
     <div class="consult-hd">
-		<?php include template("block_team_share");?>
+
 		<div class="deal-info"><table class="deal-info-table"><tr><td class="link"><p><a href="/team.php?id=<?php echo $team['id']; ?>">&raquo;&nbsp;Return </a></p><h2><?php echo $team['title']; ?></h2></td><?php if($team['close_time']==0){?><td class="buy"><a href="/team/buy.php?id=<?php echo $team['id']; ?>">hello</a></td><?php }?></tr></table></div>
 	</div>
     <div class="consult-bd">
@@ -13,7 +13,7 @@
                 <div class="box-top"></div>
                 <div class="box-content">
                     <div class="head">
-                        <h2><?php echo $INI['system']['abbreviation']; ?>FAQs</h2>
+                        <h2><?php echo $INI['system']['abbreviation']; ?> FAQs</h2>
                     </div>
                     <div class="sect consult-list">
                         <ul class="list">
