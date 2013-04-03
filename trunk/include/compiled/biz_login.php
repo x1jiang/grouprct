@@ -7,7 +7,7 @@
         <div class="box">
             <div class="box-top"></div>
             <div class="box-content">
-                                <div class="head"><h2>Merchant Login</h2></div>
+                                <div class="head"><h2>Researcher Login</h2></div>
                 <div class="sect">
                     <form id="biz-user-form" method="post" action="/biz/login.php" class="validator">
                         <div class="field">

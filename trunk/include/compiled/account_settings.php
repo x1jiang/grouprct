@@ -79,10 +79,7 @@
             <div class="box-bottom"></div>
         </div>
     </div>
-    <div id="sidebar" class="rail">
-		<?php include template("block_side_credit");?>
-		<?php include template("block_side_credittip");?>
-    </div>
+
 </div>
 </div> <!-- bd end -->
 </div> <!-- bdw end -->

@@ -43,8 +43,8 @@ function current_biz() {
 	global $INI;
 	$a = array(
 			'/biz/index.php' => 'Home',
-			'/biz/settings.php' => 'Merchant info',
-			'/biz/coupon.php' => $INI['system']['couponname'] . ' list',
+			'/biz/settings.php' => 'Researcher info',
+		//	'/biz/coupon.php' => $INI['system']['couponname'] . ' list',
 			);
 	$r = $_SERVER['REQUEST_URI'];
 	if (preg_match('#/biz/coupon#',$r)) $l = '/biz/coupon.php';
