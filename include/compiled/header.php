@@ -2,7 +2,7 @@
 
 <div id="hdw">
 	<div id="hd">
-		<div id="logo"><a href="/manage/index.php">Admin's panel |</a>    <a href="/biz/index.php">User's panel</a></div>
+		<div id="logo"><a href="/manage/index.php">Admin's panel |</a>    <a href="/biz/index.php">Researchers' panel</a></div>
   <div class="guides">
 			<div class="city">
 				<h2><?php echo $city['name']; ?> </h2>

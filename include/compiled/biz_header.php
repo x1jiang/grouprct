@@ -5,7 +5,7 @@
 		<div id="logo"><a href="/index.php" class="link" target="_blank"><img src="/static/css/i/logo.gif" /></a></div>
 		<div class="guides">
 			<div class="city">
-				<h2>Merchant admin part</h2>
+				<h2>Providers</h2>
 			</div>
 		</div>
 		<ul class="nav cf"><?php echo current_biz(); ?></ul>
