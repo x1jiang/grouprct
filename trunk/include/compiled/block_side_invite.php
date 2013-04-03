@@ -2,9 +2,9 @@
 	<div class="sbox-top"></div>
 	<div class="sbox-content">
 		<div class="tip">
-			<h2>Invite get bonus</h2>
-			<p class="text">Once your invitee buys item,you will get<strong><span class="money"><?php echo $currency; ?></span><?php echo $INI['system']['invitecredit']; ?></strong>dollars coupon</p>
-			<p class="link"><a href="/account/invite.php">&raquo;&nbsp;Click to get your invitation link</a></p>
+			<h2>Invite and get rewards</h2>
+			<p class="text">Invite friends and get a Starbucks card!<strong></p>
+			<p class="link"><a href="/account/invite.php">&raquo;&nbsp;Click to get an invitation link</a></p>
 		</div>
 	</div>
 	<div class="sbox-bottom"></div>
