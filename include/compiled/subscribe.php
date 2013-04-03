@@ -37,13 +37,7 @@
 		<div class="box-bottom"></div>
 	</div>
 </div>
-<div id="sidebar">
-	<div class="side-pic">
-	   <p><img src="/static/img/subscribe-pic1.jpg" /></p> 
-	   <p><img src="/static/img/subscribe-pic2.jpg" /></p> 
-	   <p><img src="/static/img/subscribe-pic3.jpg" /></p> 
-	</div>
-</div>
+
 </div>
 </div> <!-- bd end -->
 </div> <!-- bdw end -->
