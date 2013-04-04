@@ -32,7 +32,7 @@
     </tr>
     <tr>
         <td class="left"><a href="/team.php?id=<?php echo $order['team_id']; ?>" target="_blank"><?php echo $team['title']; ?></a></td>
-        <td class="status"><?php if(!$express&&!$order['card_id']){?>Transaction success<?php } else { ?>-<?php }?></td>
+        <td class="status"><?php if(!$express&&!$order['card_id']){?>Joined<?php } else { ?>-<?php }?></td>
     </tr>
 
 <?php if($order['card_id']){?>
@@ -67,7 +67,7 @@
         <td></td>
         <td></td>
         <td class="total"><span class="money"><?php echo $currency; ?></span><?php echo moneyit($order['origin']); ?></td>
-        <td class="status">Transaction success</td>
+        <td class="status">Joined</td>
     </tr>
 <?php }?>
 
