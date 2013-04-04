@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="435b31bb-1b01-4989-bd8d-8031a14285a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/index.js" afterPath="$PROJECT_DIR$/static/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/compiled/order_view.php" afterPath="$PROJECT_DIR$/include/compiled/order_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/configure/system.php" afterPath="$PROJECT_DIR$/include/configure/system.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ogo.iws" />
@@ -12,7 +9,7 @@
     <file path="/subscribe.html" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364858306137" ignored="false" />
     <file path="/a.dummy" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1365039283768" ignored="false" />
     <file path="/header.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364859371134" ignored="false" />
-    <file path="/Dummy.txt" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1365039111207" ignored="false" />
+    <file path="/Dummy.txt" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1365039365406" ignored="false" />
     <file path="/buy.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937008537" ignored="false" />
     <file path="/team_index.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937357769" ignored="false" />
     <file path="/team_view.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1365035090504" ignored="false" />
@@ -595,7 +592,11 @@
       <created>1365039119109</created>
       <updated>1365039119109</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017">
+      <created>1365039374102</created>
+      <updated>1365039374102</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
