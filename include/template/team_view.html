@@ -30,20 +30,7 @@
 					<!--{/if}-->
                     </div>
                     <table class="deal-discount">
-                        <tr>
-                            <th>Retail Price</th>
-                            <th>Discount</th>
-                            <th>Save</th>
-                        </tr>
-                        <tr>
-                            <td>{$currency}${moneyit($team['market_price'])}</td>
-						<!--{if ($team['market_price']>0&&$team['team_price']>0)}-->
-                            <td>${moneyit($discount_rate)}</td>
-						<!--{else}-->
-							<td>?</td>
-						<!--{/if}-->
-                            <td>{$currency}{$discount_price}</td>
-                        </tr>
+
                     </table>
 					<!--{if $team['close_time']}-->
                     <div class="deal-box deal-timeleft deal-off" id="deal-timeleft" curtime="{$now}000" diff="{$diff_time}000">

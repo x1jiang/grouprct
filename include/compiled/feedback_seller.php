@@ -7,7 +7,7 @@
         <div class="box">
             <div class="box-top"></div>
             <div class="box-content">
-                <div class="head"><h2>Provide local Randomized Clinical Trials infomration</h2></div>
+                <div class="head"><h2>Provide Randomized Clinical Trials infomration</h2></div>
                 <div class="sect">
                     <form id="feedback-user-form" method="post" action="/feedback/seller.php" class="validator">
                         <div class="field fullname">
