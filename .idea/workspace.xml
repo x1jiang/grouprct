@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="435b31bb-1b01-4989-bd8d-8031a14285a9" name="Default" comment="">
+    <list default="true" readonly="true" id="435b31bb-1b01-4989-bd8d-8031a14285a9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team/buy.php" afterPath="$PROJECT_DIR$/team/buy.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ogo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/subscribe.html" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364858306137" ignored="false" />
-    <file path="/a.dummy" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1365039283768" ignored="false" />
+    <file path="/a.dummy" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1365039445678" ignored="false" />
     <file path="/header.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364859371134" ignored="false" />
-    <file path="/Dummy.txt" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1365039365406" ignored="false" />
+    <file path="/Dummy.txt" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1365039413875" ignored="false" />
     <file path="/buy.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937008537" ignored="false" />
     <file path="/team_index.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1364937357769" ignored="false" />
     <file path="/team_view.php" changelist="435b31bb-1b01-4989-bd8d-8031a14285a9" time="1365035090504" ignored="false" />
@@ -41,12 +42,8 @@
       <file leaf-file-name="team_view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/compiled/team_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="49" selection-start="10464" selection-end="10464" vertical-scroll-proportion="-9.66">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="115" column="49" selection-start="7106" selection-end="7106" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,7 +51,7 @@
       <file leaf-file-name="team_buy.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/compiled/team_buy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="38" selection-start="3927" selection-end="3927" vertical-scroll-proportion="-9.208333">
+            <state line="59" column="38" selection-start="3927" selection-end="3927" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,10 +60,8 @@
       <file leaf-file-name="order_check.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/compiled/order_check.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="32" selection-start="5169" selection-end="5169" vertical-scroll-proportion="-10.86">
-              <folding>
-                <element signature="n#style#0;n#a#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="86" column="32" selection-start="5169" selection-end="5169" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,7 +69,7 @@
       <file leaf-file-name="order_pay_success.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/compiled/order_pay_success.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="6" selection-start="641" selection-end="641" vertical-scroll-proportion="-10.0">
+            <state line="16" column="6" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,7 +78,7 @@
       <file leaf-file-name="system.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/configure/system.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="19" selection-start="110" selection-end="110" vertical-scroll-proportion="-3.75">
+            <state line="6" column="19" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,16 +87,25 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="74269" selection-end="74269" vertical-scroll-proportion="-13.846154">
+            <state line="24" column="0" selection-start="74269" selection-end="74269" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order_view.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="order_view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/compiled/order_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="75" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.33333334">
+            <state line="50" column="8" selection-start="1646" selection-end="1646" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buy.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/team/buy.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="61" selection-start="2806" selection-end="2806" vertical-scroll-proportion="1.27">
               <folding />
             </state>
           </provider>
@@ -110,7 +114,7 @@
       <file leaf-file-name="order_pay.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/compiled/order_pay.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="4" selection-start="905" selection-end="1050" vertical-scroll-proportion="-6.0">
+            <state line="20" column="4" selection-start="905" selection-end="1050" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,16 +123,7 @@
       <file leaf-file-name="team.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/team.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="13" selection-start="1734" selection-end="1734" vertical-scroll-proportion="-23.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="block_side_others.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/compiled/block_side_others.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="92" selection-start="526" selection-end="526" vertical-scroll-proportion="-5.625">
+            <state line="61" column="13" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -149,7 +144,6 @@
         <option value="$PROJECT_DIR$/include/compiled/manage_header.php" />
         <option value="$PROJECT_DIR$/include/compiled/header.php" />
         <option value="$PROJECT_DIR$/include/compiled/team_index.php" />
-        <option value="$PROJECT_DIR$/team/buy.php" />
         <option value="$PROJECT_DIR$/static/jssrc/index.js" />
         <option value="$PROJECT_DIR$/static/jssrc/customize.js" />
         <option value="$PROJECT_DIR$/include/compiled/team_view.php" />
@@ -160,6 +154,7 @@
         <option value="$PROJECT_DIR$/include/configure/system.php" />
         <option value="$PROJECT_DIR$/static/js/index.js" />
         <option value="$PROJECT_DIR$/include/compiled/order_view.php" />
+        <option value="$PROJECT_DIR$/team/buy.php" />
       </list>
     </option>
   </component>
@@ -170,10 +165,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="154" />
-    <option name="y" value="78" />
+    <option name="x" value="215" />
+    <option name="y" value="143" />
     <option name="width" value="2284" />
-    <option name="height" value="1292" />
+    <option name="height" value="940" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -241,7 +236,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,6 +288,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,14 +296,14 @@
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="75" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="75" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="75" />
-    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5" value="5" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5" value="5" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4" value="4" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="75" />
     <property name="last_opened_file_path" value="C:/php" />
@@ -321,8 +316,8 @@
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="75" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5" value="75" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
@@ -356,8 +351,24 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="false" />
             <option name="myId" value="UPDATED" />
-            <PATH vcs="svn" revision="42">$PROJECT_DIR$/include/configure/system.php</PATH>
-            <PATH vcs="svn" revision="42">$PROJECT_DIR$/static/js/index.js</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/include/configure/system.php</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/include/function/current.php</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/include/template/manage_market_downuser.html</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/include/template/manage_ajax_dialog_teamdetail.html</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/include/template/team_view.html</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/include/template/html_header.html</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/include/template/block_team_share.html</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/include/compiled/block_side_business.php</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/include/compiled/team_view.php</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/include/compiled/feedback_seller.php</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/include/compiled/html_header.php</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/include/classes/ZSystem.class.php</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/static/css/i/bg-consult-ask.gif</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/static/css/i/button-header-subscribe.gif</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/static/css/i/bg-sold-out.gif</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/static/css/i/bg-deal-expired-success.gif</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/static/css/i/bg-deal-expired-fail.gif</PATH>
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/static/css/i/button-subscribe-b.gif</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Created" />
@@ -365,6 +376,7 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="false" />
             <option name="myId" value="CREATED" />
+            <PATH vcs="svn" revision="53">$PROJECT_DIR$/~$logoSupport.pptx</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Deleted" />
@@ -469,7 +481,7 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="46bfd2bc-f348-4dea-ab5b-f2ceb883a1c6" server_name="apache">
       <method />
     </configuration>
     <list size="1">
@@ -499,6 +511,7 @@
     <option name="IGNORE_EXTERNALS" value="false" />
     <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="SvnFileUrlMappingImpl">
     <option name="myMappingRoots">
@@ -596,28 +609,32 @@
       <created>1365039374102</created>
       <updated>1365039374102</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018">
+      <created>1365039418102</created>
+      <updated>1365039418102</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="154" y="78" width="2284" height="1292" extended-state="0" />
-    <editor active="true" />
+    <frame x="215" y="143" width="2284" height="940" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29642248" sideWeight="0.99955314" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23145665" sideWeight="0.7035775" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2336908" sideWeight="0.67153287" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39778534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.99699926" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32846716" sideWeight="0.99699926" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29642248" sideWeight="0.99955314" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -688,118 +705,100 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/jssrc/customize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="0" selection-start="5060" selection-end="5060" vertical-scroll-proportion="0.6033287">
-          <folding />
-        </state>
+        <state line="119" column="0" selection-start="5060" selection-end="5060" vertical-scroll-proportion="0.6033287" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/compiled/html_header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="30" selection-start="352" selection-end="352" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
+        <state line="5" column="30" selection-start="352" selection-end="352" vertical-scroll-proportion="-3.125" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/compiled/block_side_others.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="92" selection-start="526" selection-end="526" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
+        <state line="9" column="92" selection-start="526" selection-end="526" vertical-scroll-proportion="-5.625" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/compiled/team_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="49" selection-start="10464" selection-end="10464" vertical-scroll-proportion="-9.66">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="115" column="49" selection-start="7106" selection-end="7106" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/compiled/order_charge.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="62" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.40697673">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/team/buy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="0" selection-start="2821" selection-end="2821" vertical-scroll-proportion="-21.0">
-          <folding />
-        </state>
+        <state line="21" column="62" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.40697673" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage/order/pay.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="88" selection-end="98" vertical-scroll-proportion="0.09689923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/team.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="13" selection-start="1734" selection-end="1734" vertical-scroll-proportion="-23.5">
-          <folding />
-        </state>
+        <state line="5" column="10" selection-start="88" selection-end="98" vertical-scroll-proportion="0.09689923" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/order/pay.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="41" selection-start="5445" selection-end="5445" vertical-scroll-proportion="0.88372093">
-          <folding />
-        </state>
+        <state line="170" column="41" selection-start="5445" selection-end="5445" vertical-scroll-proportion="0.88372093" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/compiled/team_buy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="38" selection-start="3927" selection-end="3927" vertical-scroll-proportion="-9.208333">
+        <state line="59" column="38" selection-start="3927" selection-end="3927" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/compiled/order_pay.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="905" selection-end="1050" vertical-scroll-proportion="-6.0">
+        <state line="20" column="4" selection-start="905" selection-end="1050" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/compiled/order_check.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="32" selection-start="5169" selection-end="5169" vertical-scroll-proportion="-10.86">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="86" column="32" selection-start="5169" selection-end="5169" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/compiled/order_pay_success.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="641" selection-end="641" vertical-scroll-proportion="-10.0">
+        <state line="16" column="6" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/configure/system.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="110" selection-end="110" vertical-scroll-proportion="-3.75">
+        <state line="6" column="19" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="74269" selection-end="74269" vertical-scroll-proportion="-13.846154">
+        <state line="24" column="0" selection-start="74269" selection-end="74269" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/compiled/order_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="75" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.33333334">
+        <state line="50" column="8" selection-start="1646" selection-end="1646" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/team/buy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="61" selection-start="2806" selection-end="2806" vertical-scroll-proportion="1.27">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/team.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="13" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
