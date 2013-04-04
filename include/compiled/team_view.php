@@ -4,12 +4,12 @@
     <div id="bd" class="cf">
 
         <?php if($team['close_time']){?>
-            <div id="sysmsg-tip" class="sysmsg-tip-deal-close"><div class="sysmsg-tip-top"></div><div class="sysmsg-tip-content"><div class="deal-close"><div class="focus">Sorry,you are later,<br />transaction ended today.</div><div id="tip-deal-subscribe-body" class="body"><form id="tip-deal-subscribe-form" method="post" action="/subscribe.php" class="validator"><table><tr>
-                                        <td>Never miss tomorrow's daily deal?Now subscribe:&nbsp;</td><td><input type="text" name="email" class="f-text" value="" require="true" datatype="email" /></td><td>&nbsp;<input class="commit" type="submit" value="Subscribe" /></td></tr></table></form></div></div><span id="sysmsg-tip-close" class="sysmsg-tip-close">Close</span></div><div class="sysmsg-tip-bottom"></div></div>
+            <div id="sysmsg-tip" class="sysmsg-tip-deal-close"><div class="sysmsg-tip-top"></div><div class="sysmsg-tip-content"><div class="deal-close"><div class="focus">Sorry, the enrollment </br> ended today.</div><div id="tip-deal-subscribe-body" class="body"><form id="tip-deal-subscribe-form" method="post" action="/subscribe.php" class="validator"><table><tr>
+                                        <td>Never miss another one? Subscribe:&nbsp;</td><td><input type="text" name="email" class="f-text" value="" require="true" datatype="email" /></td><td>&nbsp;<input class="commit" type="submit" value="Subscribe" /></td></tr></table></form></div></div><span id="sysmsg-tip-close" class="sysmsg-tip-close">Close</span></div><div class="sysmsg-tip-bottom"></div></div>
         <?php }?>
 
         <?php if($order){?>
-        <div id="sysmsg-tip" ><div class="sysmsg-tip-top"></div><div class="sysmsg-tip-content">You have raised an order,but unpay.<a href="/order/check.php?id=<?php echo $order['id']; ?>">view order and pay</a><span id="sysmsg-tip-close" class="sysmsg-tip-close">close</span></div><div class="sysmsg-tip-bottom"></div></div><div id="deal-default">
+        <div id="sysmsg-tip" ><div class="sysmsg-tip-top"></div><div class="sysmsg-tip-content">You status is pending, please join the study.<a href="/order/check.php?id=<?php echo $order['id']; ?>">view order and pay</a><span id="sysmsg-tip-close" class="sysmsg-tip-close">close</span></div><div class="sysmsg-tip-bottom"></div></div><div id="deal-default">
             <?php }?>
 
             <div id="deal-default">
