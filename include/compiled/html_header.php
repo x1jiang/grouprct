@@ -3,12 +3,12 @@
 <head>
 	<meta http-equiv=content-type content="text/html; charset=UTF-8">
 <?php if(!$pagetitle||$request_uri=='index'){?>
-	<title><?php echo $INI['system']['sitename']; ?> - <?php echo $INI['system']['sitetitle']; ?>|<?php echo $city['name']; ?>Shopping|<?php echo $city['name']; ?>Daily deal |<?php echo $city['name']; ?>Discount</title>
+	<title><?php echo $INI['system']['sitename']; ?></title>
 <?php } else { ?>
-	<title><?php echo $pagetitle; ?> | <?php echo $INI['system']['sitename']; ?> - <?php echo $INI['system']['sitetitle']; ?> |<?php echo $city['name']; ?>Shopping|<?php echo $city['name']; ?>Daily deal |<?php echo $city['name']; ?>Discount<?php echo $INI['system']['subtitle']; ?></title>
+	<title><?php echo $pagetitle; ?> | <?php echo $INI['system']['sitename']; ?></title>
 <?php }?>
-	<meta name="description" content="<?php echo $INI['system']['sitetitle']; ?>|<?php echo $city['name']; ?>Shopping|<?php echo $city['name']; ?>Daily deal |<?php echo $city['name']; ?>Discount" />
-	<meta name="keywords" content="<?php echo $INI['system']['sitename']; ?>, <?php echo $city['name']; ?>, <?php echo $city['name']; ?><?php echo $INI['system']['sitename']; ?>,<?php echo $city['name']; ?>Shopping,<?php echo $city['name']; ?>Daily deal ,<?php echo $city['name']; ?>Discount,Daily deal ,discount,cool consumption ,shopping guid,consumption guide" />
+	<meta name="description" content="<?php echo $INI['system']['sitetitle']; ?>" />
+	<meta name="keywords" content="<?php echo $INI['system']['sitename']; ?>" />
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 	<link href="<?php echo $INI['system']['wwwprefix']; ?>/feed.php?ename=<?php echo $city['ename']; ?>" rel="alternate" title="Subscribe update" type="application/rss+xml" />
 	<link rel="shortcut icon" href="/static/icon/favicon.ico" />
