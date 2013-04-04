@@ -74,12 +74,12 @@
 					</div>
 					<!--{else}-->
 					<div class="deal-box deal-status deal-status-open" id="deal-status">
-						<p class="deal-buy-tip-top"><strong>{$team['now_number']}</strong> Bought</p>
+						<p class="deal-buy-tip-top"><strong>{$team['now_number']}</strong> joined</p>
 						<p class="deal-buy-on" style="line-height:200%;"><img src="/static/css/i/deal-buy-succ.gif"/> Success! <!--{if $team['max_number']>$team['now_number']||$team['max_number']==0}--><br/>Continue to buy<!--{/if}--></p>
 					</div>
 					<!--{/if}-->
 				<!--{else}-->
-					<div class="deal-box deal-status deal-status-{$team['state']}" id="deal-status"><div class="deal-buy-{$team['state']}"></div><p class="deal-buy-tip-total">Totally <strong>{$team['now_number']}</strong> bought</p></div> 
+					<div class="deal-box deal-status deal-status-{$team['state']}" id="deal-status"><div class="deal-buy-{$team['state']}"></div><p class="deal-buy-tip-total">Totally <strong>{$team['now_number']}</strong> joined</p></div>
 				<!--{/if}-->
 				</div>
                 <div class="side">

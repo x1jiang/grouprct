@@ -90,7 +90,7 @@
                             </div>
                             <?php }?>
 				<?php } else { ?>
-                            <div class="deal-box deal-status deal-status-<?php echo $team['state']; ?>" id="deal-status"><div class="deal-buy-<?php echo $team['state']; ?>"></div><p class="deal-buy-tip-total">Totally <strong><?php echo $team['now_number']; ?></strong> bought</p></div>
+                            <div class="deal-box deal-status deal-status-<?php echo $team['state']; ?>" id="deal-status"><div class="deal-buy-<?php echo $team['state']; ?>"></div><p class="deal-buy-tip-total">Totally <strong><?php echo $team['now_number']; ?></strong> joined</p></div>
                             <?php }?>
                         </div>
                         <div class="side">

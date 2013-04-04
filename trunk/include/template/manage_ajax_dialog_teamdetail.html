@@ -9,7 +9,7 @@
 		<tr><td><b>limited Quantity:</b></td><td>Minimal :{$team['min_number']}&nbsp;&nbsp;&nbsp;&nbsp;Maximized :${$team['max_number']==0?'no limit':$team['max_number']}</td></tr>
 		<tr><td><b>our price:</b></td><td>retail price:<b>${moneyit($team['market_price'])}</b>&nbsp;Dollars &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Daily deal Price:<b>${moneyit($team['team_price'])}</b>&nbsp;Dollars </td></tr>
 		<tr><th colspan="2"><hr/></th></td>
-		<tr><td><b>Deal statistics:</b></td><td><b>{$team['now_number']}</b>&nbsp;,totally &nbsp;<b>{$paycount}</b>&nbsp;person bought &nbsp;<b>{$buycount}</b>&nbsp;
+		<tr><td><b>Deal statistics:</b></td><td><b>{$team['now_number']}</b>&nbsp;,totally &nbsp;<b>{$paycount}</b>&nbsp;person joined &nbsp;<b>{$buycount}</b>&nbsp;
 		</td></tr>
 		<tr><td><b>Pay statistics:</b></td><td>online pay:<b>${moneyit($onlinepay)}</b>&nbsp;Dollars &nbsp;&nbsp;&nbsp;&nbsp;Remaining pay:<b>${moneyit($creditpay)}</b>&nbsp;Dollars </td></tr>
 		<tr><td><b>income:</b></td><td>pay amount:<b>${moneyit($onlinepay+$creditpay)}</b>&nbsp;Dollars &nbsp;&nbsp;&nbsp;&nbsp;coupon amount:<b>${moneyit($cardpay)}</b>&nbsp;Dollars </td></tr>
