@@ -5,9 +5,9 @@
     <div id="order-pay-return" class="box">
         <div class="box-top"></div>
         <div class="box-content">
-			<div class="success"><h2>Your Order,pay successfully.</h2> </div>
+			<div class="success"><h2>Your have joined.</h2> </div>
             <div class="sect">
-                <p class="error-tip">View item&nbsp;<a href="/team.php?id=<?php echo $order['team_id']; ?>"><?php echo $team['title']; ?></a>&nbsp;的&nbsp;<a href="/order/view.php?id=<?php echo $order_id; ?>">OrderInfo</a>.</p>
+                <p class="error-tip">View &nbsp;<a href="/team.php?id=<?php echo $order['team_id']; ?>"><?php echo $team['title']; ?></a>&nbsp; in your &nbsp;<a href="/order/view.php?id=<?php echo $order_id; ?>">joined list</a>.</p>
             </div>
 		</div>
 		<div class="box-bottom"></div>

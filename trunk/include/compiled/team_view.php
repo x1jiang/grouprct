@@ -130,11 +130,11 @@
                             <div class="box-content cf">
                                 <div class="main">
                                     <?php if(trim(strip_tags($team['detail']))){?>
-                                    <h2 id="detail">Order info</h2>
+                                    <!--<h2 id="detail">Order info</h2>-->
                                     <div class="blk detail"><?php echo $team['detail']; ?></div>
                                     <?php }?>
 						<?php if(trim(strip_tags($team['notice']))){?>
-                                    <h2 id="detailit">Hints</h2>
+                                    <!--<h2 id="detailit">Hints</h2>-->
                                     <div class="blk cf"><?php echo $team['notice']; ?></div>
                                     <?php }?>
 						<?php if(trim(strip_tags($team['userreview']))){?>
@@ -142,7 +142,7 @@
                                     <div class="blk review"><?php echo userreview($team['userreview']); ?></div>
                                     <?php }?>
 						<?php if(trim(strip_tags($team['systemreview']))){?>
-                                    <h2 id="systemreview"><?php echo $INI['system']['abbreviation']; ?>say</h2>
+                                    <!--<h2 id="systemreview"><?php /*echo $INI['system']['abbreviation'];*/ ?>say</h2>--?
                                     <div class="blk review"><?php echo $team['systemreview']; ?></div>
                                     <?php }?>
                                 </div>

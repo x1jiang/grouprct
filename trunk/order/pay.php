@@ -30,7 +30,7 @@ if (is_post()&&$_POST['paytype']) {
 if ( $order['state'] == 'pay' ) {  
 	if ( is_get() ) {
 		$team = Table::Fetch('team', $order['team_id']);
-		die(include template('order_pay_success'));		
+		die(include template('order_pay_success'));
 	} else {
 		redirect(WEB_ROOT  . "/order/pay.php?id={$order_id}");
 	}
@@ -168,7 +168,7 @@ else if ( $order['service'] == 'alipay' ) {
 }
 else if ( $order['service'] == 'credit' ) {
 	$total_money = $order['origin'];
-	die(include template('order_pay'));
+	//die(include template('order_pay'));
 } 
 else {
 	Session::Set('error', '无合适的支付方式或余额不足');
