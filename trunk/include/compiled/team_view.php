@@ -20,11 +20,11 @@
                     <div class="deal-buy">
                         <div class="deal-price-tag"></div>
 					<?php if(($team['state']=='soldout')){?>
-                        <p class="deal-price"><strong><?php echo $currency; ?><?php echo moneyit($team['team_price']); ?></strong><span class="deal-price-soldout"></span></p>
+                        <p class="deal-price"><span class="deal-price-soldout"></span></p>
 					<?php } else if($team['close_time']) { ?>
-                        <p class="deal-price"><strong><?php echo $currency; ?><?php echo moneyit($team['team_price']); ?></strong><span class="deal-price-expire"></span></p>
+                        <p class="deal-price"><span class="deal-price-expire"></span></p>
 					<?php } else { ?>
-                        <p class="deal-price"><strong><?php echo $currency; ?><?php echo moneyit($team['team_price']); ?></strong><span><a <?php echo $team['begin_time']<time()?'href="/team/buy.php?id='.$team['id'].'"':''; ?>><img src="/static/css/i/button-deal-buy.gif" /></a></span></p>
+                        <p class="deal-price"><span><a <?php echo $team['begin_time']<time()?'href="/team/buy.php?id='.$team['id'].'"':''; ?>><img src="/static/css/i/button-deal-buy.gif" /></a></span></p>
 					<?php }?>
                     </div>
                     <table class="deal-discount">
