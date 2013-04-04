@@ -66,9 +66,7 @@ class ZSystem
 		if(!$ini['system']['sitetitle']) {
 			$ini['system']['sitetitle'] = 'Randomized Clinical Trial of the day';
 		}
-		if(!$ini['system']['abbreviation']) {
-			$ini['system']['abbreviation'] = 'mRCT';
-		}
+        $ini['system']['abbreviation'] = 'RCT';
 		if(!$ini['system']['couponname']) {
 			$ini['system']['couponname'] = 'Coupon';
 		}
