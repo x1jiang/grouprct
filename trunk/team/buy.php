@@ -23,7 +23,7 @@ $order = DB::LimitQuery('order', array(
 if (strtoupper($team['buyonce'])=='Y') {
 	$ex_con['state'] = 'pay';
 	if ( Table::Count('order', $ex_con) ) {
-		Session::Set('error', 'This item allow buy once.');
+		Session::Set('error', 'You have joined.');
 		redirect( WEB_ROOT . "/team.php?id={$id}"); 
 	}
 }
