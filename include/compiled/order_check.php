@@ -6,7 +6,7 @@
     <div id="deal-buy" class="box">
         <div class="box-top"></div>
         <div class="box-content">
-            <div class="head"><h2>Your Order</h2></div>
+            <div class="head"><h2>Final Review</h2></div>
             <div class="sect">
                 <table class="order-table">
                     <!--<tr>
@@ -59,6 +59,10 @@
 				<div class="paytype">
                 <form action="/order/pay.php" method="post" class="validator">
 				<div class="order-check-form ">
+                    <div class="order-pay-credit">
+						<h3>Your remark</h3>
+						<p><?php echo $order['remark']; ?></p>
+					</div>
 					<!--<div class="order-pay-credit">
 						<h3>Your remaining charge</h3>
 						<p>remaining charge:<strong><span class="money"><?php /*echo $currency; */?></span><?php /*echo moneyit($login_user['money']); */?></strong> <?php /*if($login_user['money']<$order['origin']){*/?>Your remaining c harge is not enough,still need <strong><span class="money"><?php /*echo $currency; */?></span><?php /*echo moneyit($order['origin']-$login_user['money']); */?></strong>.Please choose payment way:<?php /*} else { */?>Your remaining charge is enough,please finish payment.<?php /*}*/?></p>
@@ -90,7 +94,8 @@
 					<input type="hidden" name="address" value="<?php echo $order['address']; ?>" />
 					<input type="hidden" name="express" value="<?php echo $order['express']; ?>" />
 					<input type="hidden" name="remark" value="<?php echo $order['remark']; ?>" />
-					<input type="submit" value="OK & Pay now" class="formbutton" /> <a href="/team/buy.php?id=<?php echo $order['team_id']; ?>" style="margin-left:1em;">Return Modify Order</a>
+                    <input type="hidden" name="service" value="credit" />
+					<input type="submit" value="OK & Join" class="formbutton gotopay" /> <a href="/team/buy.php?id=<?php echo $order['team_id']; ?>" style="margin-left:1em;">Return Modify Remark</a>
 					</p>
 				</div>
 				</form>
@@ -102,7 +107,7 @@
 </div>
 <div id="sidebar">
 <?php if(!$order['card_id']){?>
-	<?php include template("block_side_card");?>
+	<?php /*include template("block_side_card");*/?>
 <?php }?>
 </div>
 </div> <!-- bd end -->

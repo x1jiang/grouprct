@@ -7,7 +7,7 @@
     <div id="deal-buy" class="box">
         <div class="box-top"></div>
         <div class="box-content">
-            <div class="head"><h2>Submit order</h2></div>
+            <div class="head"><h2>Leave Your Remark</h2></div>
             <div class="sect">
             <table class="order-table">
                 <!--<tr>
@@ -73,7 +73,7 @@
 			</div>
             <input id="deal-buy-cardcode" type="hidden" name="cardcode" maxlength="8" value="" />
             <input type="hidden" name="id" value="<?php echo $order['id']; ?>" />
-			<div class="form-submit"><input type="submit" class="formbutton" name="buy" value="Make sure and join"/></div>
+			<div class="form-submit"><input type="submit" class="formbutton" name="buy" value="Continue"/></div>
             </div>
         </div>
         <div class="box-bottom"></div>
@@ -81,7 +81,7 @@
     </form>
 </div>
 <div id="sidebar">
-	<?php include template("block_side_credit");?>
+	<?php /*include template("block_side_credit");*/?>
 </div>
 </div> <!-- bd end -->
 </div> <!-- bdw end -->
