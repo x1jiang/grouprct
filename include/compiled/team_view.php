@@ -85,7 +85,7 @@
                             </div>
                             <?php } else { ?>
                             <div class="deal-box deal-status deal-status-open" id="deal-status">
-                                <p class="deal-buy-tip-top"><strong><?php echo $team['now_number']; ?></strong> Bought</p>
+                                <p class="deal-buy-tip-top"><strong><?php echo $team['now_number']; ?></strong> joined </p>
                                 <p class="deal-buy-on" style="line-height:200%;"><img src="/static/css/i/deal-buy-succ.gif"/> Success! <?php if($team['max_number']>$team['now_number']||$team['max_number']==0){?><br/>Continue to buy<?php }?></p>
                             </div>
                             <?php }?>
