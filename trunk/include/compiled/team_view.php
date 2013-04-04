@@ -64,7 +64,7 @@
                             <?php } else { ?>
                             <div class="deal-box deal-timeleft deal-on" id="deal-timeleft" curtime="<?php echo $now; ?>000" diff="<?php echo $diff_time; ?>000">
                                 <h3>Remaining Time</h3>
-                                <div class="limitdate"><ul>
+                                <div class="limitdate"><ul id="counter">
                                         <?php if($left_day>0){?>
                                         <li><span><?php echo $left_day; ?></span>Days</li><li><span><?php echo $left_hour; ?></span>Hours</li><li><span><?php echo $left_minute; ?></span>Minutes</li>
                                         <?php } else { ?>
