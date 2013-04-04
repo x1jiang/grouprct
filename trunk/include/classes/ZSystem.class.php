@@ -60,9 +60,9 @@ class ZSystem
 		$host = $_SERVER['HTTP_HOST'];
 		$ini['system']['wwwprefix'] = "http://{$host}" . WEB_ROOT;
 		$ini['system']['imgprefix'] = "http://{$host}" . WEB_ROOT;
-		if(!$ini['system']['sitename']) {
-			$ini['system']['sitename'] = 'mRCT';
-		}
+
+		$ini['system']['sitename'] = 'RCT';
+
 		if(!$ini['system']['sitetitle']) {
 			$ini['system']['sitetitle'] = 'Randomized Clinical Trial of the day';
 		}

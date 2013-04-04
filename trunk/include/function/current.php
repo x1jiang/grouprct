@@ -2,7 +2,7 @@
 function current_frontend() {
 	global $INI;
 	$a = array(
-			'/index.php' => 'Today',
+			'/index.php' => 'Featured',
 			'/team/index.php' => 'All RCTs',
 			'/help/tour.php' =>  $INI['system']['abbreviation'] .' Guide',
 			'/subscribe.php' => 'Subscribe',
