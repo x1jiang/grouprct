@@ -495,8 +495,8 @@ dd#bd{position:relative;z-index:1;width:960px;margin:0 auto;padding:30px 0 65px;
 .deal-discount th,.deal-discount td{padding:0 10px;text-align:center;}
 .deal-discount th{padding-top:20px;font-size:12px;font-weight:normal;}
 .deal-discount td{padding-bottom:10px;font-size:16px;}
-.deal-box{margin-top:12px;border:1px solid #89b4d6;background:#e4f1fa;padding:8px;}
-.deal-timeleft{padding-left:20px;padding-right:64px;background-image:url(i/bg-deal-open.gif);background-position:90% 50%;background-repeat:no-repeat;color:#333;}
+.deal-box{margin-top:12px;border:1px solid #89b4d6;background:#e4f1fa;padding:5px;}
+.deal-timeleft{padding-left:10px;padding-right:64px;background-image:url(i/bg-deal-open.gif);background-position:90% 50%;background-repeat:no-repeat;color:#333;}
 .deal-timeleft h3{font-size:14px;font-weight:normal;}
 .deal-timeleft li{font-weight:bold;}
 .deal-timeleft li span{float:left;width:22px;font-weight:bold;margin-right:4px;text-align:right;*margin-top:-1px;padding-right:2px;*padding-right:0;}
