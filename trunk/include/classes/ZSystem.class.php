@@ -61,12 +61,12 @@ class ZSystem
 		$ini['system']['wwwprefix'] = "http://{$host}" . WEB_ROOT;
 		$ini['system']['imgprefix'] = "http://{$host}" . WEB_ROOT;
 
-		$ini['system']['sitename'] = 'RCT';
+		$ini['system']['sitename'] = 'IMPACT';
 
 		if(!$ini['system']['sitetitle']) {
 			$ini['system']['sitetitle'] = 'Randomized Clinical Trial of the day';
 		}
-        $ini['system']['abbreviation'] = 'RCT';
+        $ini['system']['abbreviation'] = 'IMPACT';
 		if(!$ini['system']['couponname']) {
 			$ini['system']['couponname'] = 'Coupon';
 		}
