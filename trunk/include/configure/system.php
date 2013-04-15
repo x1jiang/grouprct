@@ -5,7 +5,7 @@ $INI = array (
     'host' => 'localhost',
     'user' => 'root',
     'pass' => 'Keepme4ever!',
-    'name' => 'ogo',
+    'name' => 'rct',
   ),
 );
 ?>

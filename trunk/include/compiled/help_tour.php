@@ -10,9 +10,17 @@
         <div class="box">
             <div class="box-top"></div>
             <div class="box-content">
+
                 <div class="head"><h2><?php echo $INI['system']['abbreviation']; ?> tour</h2></div>
-                <div class="sect"><?php echo $page['value']; ?></div>
+
+                <div class="sect"><?php echo $page['value']; ?> 
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Urj8Dv6vULU" frameborder="0" allowfullscreen></iframe>
+
+</div>
+
             </div>
+
             <div class="box-bottom"></div>
         </div>
 	</div>
